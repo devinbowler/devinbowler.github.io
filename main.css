@@ -913,6 +913,289 @@ a.site1 {
 
   /* MEDIA QUERIES */
 
+  @media (min-width: 300px) and (max-width: 400px) {
+	.et-hero-tabs-container {
+		visibility: hidden;
+	}
+
+	.name h1 {
+		left: 25px;
+	}
+
+	.line2 {
+		left: 115px;
+	}
+
+
+	.line3 {
+		left: 50px;
+	}
+
+	.para p {
+		left: 45px;
+	}
+
+	.resume {
+		top: 635px;
+		left: 135px;
+	}
+
+	.wrapper {
+		left: 25px;
+	}
+
+	.thick-arrow-down {
+		left: 180px;
+	}
+
+	/* Experiecne Page */
+
+	.exp-right {
+		visibility: hidden;
+	}
+
+	.exp-left {
+		width: 450px;
+		height: 350px;
+		animation: none;
+	}
+
+	.exp-right p {
+		visibility: hidden;
+	}
+
+	.exp-left p {
+		font-size: 25px;
+		width: 350px;
+		font-size: 20px;
+	}
+	
+		/* Project Page */
+		.project1 {
+            width: 250px;
+        }
+
+		.project2 {
+            width: 250px;
+        }
+
+		
+		.project1 .code {
+			top: 0px;
+			left: 60px;
+		}
+
+		.project1 .more {
+			top: 0px;
+			left: 25px;
+		}
+
+		.project2 .code1 {
+			top: 0px;
+			left: 60px;
+		}
+
+		.project2 .more1 {
+			top: 0px;
+			left: 25px;
+		}
+
+		/* About Page */
+
+		.text {
+			width: 250px;
+		}
+
+		/* About Page */
+
+		.text {
+			width: 375px;
+		}
+		
+		#about p {
+			left: 50px;
+			top: 10px;
+			width: 200px;
+			font-size: 12.5px;
+		}
+		
+		#about span {
+			font-size: 12.5px;
+		}
+		
+		#about img {
+			visibility: hidden;
+		}
+
+		/* Footer Page */
+
+		.footer {
+			width: 675px;
+		}
+	
+		#contact h2 {
+			left: 300px;
+		}
+	
+		#contact .lineCon {
+			left: 300px;
+		}
+	
+		#contact a {
+			left: -1200px;
+		}
+	
+		#contact address {
+			left: -1200px;
+			top: 60px;
+		}
+
+		#contact p {
+			visibility: hidden;
+		}
+}
+
+  @media (min-width: 400px) and (max-width: 500px) {
+	.et-hero-tabs-container {
+		visibility: hidden;
+	}
+
+	.name h1 {
+		left: 130px;
+	}
+
+	.line2 {
+		left: 220px;
+	}
+
+
+	.line3 {
+		left: 295px;
+	}
+
+	.para p {
+		left: 150px;
+	}
+
+	.resume {
+		left: 140px;
+	}
+
+	.wrapper {
+		left: 265px;
+	}
+
+	.thick-arrow-down {
+		left: 278px;
+	}
+
+	/* Experiecne Page */
+
+	.exp-right {
+		visibility: hidden;
+	}
+
+	.exp-left {
+		width: 450px;
+		height: 350px;
+		animation: none;
+	}
+
+	.exp-right p {
+		visibility: hidden;
+	}
+
+	.exp-left p {
+		font-size: 25px;
+		width: 350px;
+		font-size: 20px;
+	}
+	
+		/* Project Page */
+		.project1 {
+            width: 250px;
+        }
+
+		.project2 {
+            width: 250px;
+        }
+
+		
+		.project1 .code {
+			top: 0px;
+			left: 60px;
+		}
+
+		.project1 .more {
+			top: 0px;
+			left: 25px;
+		}
+
+		.project2 .code1 {
+			top: 0px;
+			left: 60px;
+		}
+
+		.project2 .more1 {
+			top: 0px;
+			left: 25px;
+		}
+
+		/* About Page */
+
+		.text {
+			width: 250px;
+		}
+
+		/* About Page */
+
+		.text {
+			width: 375px;
+		}
+		
+		#about p {
+			left: 50px;
+			top: 10px;
+			width: 200px;
+			font-size: 12.5px;
+		}
+		
+		#about span {
+			font-size: 12.5px;
+		}
+		
+		#about img {
+			visibility: hidden;
+		}
+
+		/* Footer Page */
+
+		.footer {
+			width: 675px;
+		}
+	
+		#contact h2 {
+			left: 300px;
+		}
+	
+		#contact .lineCon {
+			left: 300px;
+		}
+	
+		#contact a {
+			left: -1200px;
+		}
+	
+		#contact address {
+			left: -1200px;
+			top: 60px;
+		}
+
+		#contact p {
+			visibility: hidden;
+		}
+}
+
   @media (min-width: 500px) and (max-width: 600px) {
 	.et-hero-tabs-container {
 		visibility: hidden;
