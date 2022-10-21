@@ -819,7 +819,7 @@ a.site1 {
 	position: absolute;
     font-family: 'Jost', sans-serif;
 	font-size: 40px;
-	top: 20px;
+	top: 25px;
     left: 1500px;
 	background: transparent;
 	transition: .5s all;
@@ -843,6 +843,13 @@ a.site1 {
 	height: 3px;
 	background: white;
 	transition: .5s all;
+}
+
+.footer .copy {
+	position: absolute;
+    top: 60px;
+	background: transparent;
+    left: -110px;
 }
 
 .footer .contact-info {
@@ -919,29 +926,34 @@ a.site1 {
 	}
 
 	.name h1 {
+		top: 100px;
 		left: 25px;
 	}
 
 	.line2 {
+		top: 225px;
 		left: 115px;
 	}
 
 
 	.line3 {
+		top: 350px;
 		left: 50px;
 	}
 
 	.para p {
+		top: 250px;
 		left: 45px;
 	}
 
 	.resume {
-		top: 635px;
+		top: 500px;
 		left: 135px;
 	}
 
 	.wrapper {
 		left: 25px;
+		top: 325px;
 	}
 
 	.thick-arrow-down {
@@ -955,9 +967,9 @@ a.site1 {
 	}
 
 	.exp-left {
-		width: 450px;
+		width: 405px;
 		height: 350px;
-		animation: none;
+		left: 380px;
 	}
 
 	.exp-right p {
@@ -967,43 +979,49 @@ a.site1 {
 	.exp-left p {
 		font-size: 25px;
 		width: 350px;
-		font-size: 20px;
+		left: 40px;
+		font-size: 17.5px;
+		top: 50px;
 	}
 	
 		/* Project Page */
 		.project1 {
-            width: 250px;
+            width: 350px;
+			left: 12.5px;
         }
 
 		.project2 {
-            width: 250px;
+            width: 350px;
+			left: 12.5px;
         }
 
 		
 		.project1 .code {
-			top: 0px;
-			left: 60px;
+			top: 40px;
+			left: 125px;
 		}
 
 		.project1 .more {
-			top: 0px;
-			left: 25px;
+			top: 40px;
+			left: 65px;
 		}
 
 		.project2 .code1 {
-			top: 0px;
-			left: 60px;
+			top: 40px;
+			left: 125px;
 		}
 
 		.project2 .more1 {
-			top: 0px;
-			left: 25px;
+			top: 40px;
+			left: 65px;
 		}
+		
 
 		/* About Page */
 
 		.text {
 			width: 250px;
+			left: 0px;
 		}
 
 		/* About Page */
@@ -1030,24 +1048,34 @@ a.site1 {
 		/* Footer Page */
 
 		.footer {
-			width: 675px;
+			width: 390px;
+			border-top-left-radius: 0;
+			left: -8px;
+		}
+
+		#contact h1 {
+			left: 25px;
+		}
+
+		#contact .lineName {
+			left: 25px;
 		}
 	
 		#contact h2 {
-			left: 300px;
+			left: 200px;
 		}
 	
 		#contact .lineCon {
-			left: 300px;
+			left: 200px;
 		}
 	
 		#contact a {
-			left: -1200px;
+			left: -1300px;
 		}
 	
 		#contact address {
-			left: -1200px;
-			top: 60px;
+			left: -1300px;
+			top: 20px;
 		}
 
 		#contact p {
