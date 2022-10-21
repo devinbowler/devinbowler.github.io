@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Catamaran:wght@800&family=Jost:ital,wght@1,300;1,400;1,500&family=Mukta:wght@800&family=Quicksand&display=swap');
 
 * {
-    background-color:white;
+    background-color:rgb(24,22,25);
 }
 
 html {
@@ -446,7 +446,6 @@ top: 1000px;
 	height: 300px;
 	background:rgb(182,163,136);
 	border-radius: 80px;
-	box-shadow: black;
   }
 
   .exp-right p {
@@ -777,13 +776,7 @@ a.site1 {
 }
 
 .footer {
-	position: absolute;
-	color: beige;
-	height: 300px;
-	width: 1895px;
-	border-top-left-radius: 125px;
-	background: rgb(34, 32, 36);
-	transition: .5s all;
+	color: #fff;
 }
 
 .footer h1 {
@@ -847,9 +840,9 @@ a.site1 {
 
 .footer .copy {
 	position: absolute;
-    top: 60px;
+    top: 210px;
 	background: transparent;
-    left: -110px;
+    left: 0px;
 }
 
 .footer .contact-info {
@@ -918,7 +911,7 @@ a.site1 {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 325px) {
 	.is-inViewport {
 		-webkit-transition: none !important;
 		-moz-transition: none !important;
@@ -926,44 +919,45 @@ a.site1 {
 		-ms-transition: none !important;
 		transition: none !important;
 	}
-	
+
 	.et-hero-tabs-container {
 		visibility: hidden;
 	}
 
 	.name h1 {
 		top: 100px;
-		left: 25px;
+		left: 15px;
+		font-size: 50px;
 	}
 
 	.line2 {
 		top: 225px;
-		left: 115px;
+		left: 85px;
 	}
 
 
 	.line3 {
-		top: 350px;
-		left: 50px;
+		top: 375px;
+		left: 25px;
 	}
 
 	.para p {
 		top: 250px;
-		left: 45px;
+		left: 15px;
 	}
 
 	.resume {
-		top: 500px;
-		left: 135px;
+		top: 550px;
+		left: 100px;
 	}
 
 	.wrapper {
-		left: 25px;
-		top: 325px;
+		left: -10px;
+		top: 350px;
 	}
 
 	.thick-arrow-down {
-		left: 180px;
+		left: 147px;
 	}
 
 	/* Experiecne Page */
@@ -973,9 +967,9 @@ a.site1 {
 	}
 
 	.exp-left {
-		width: 405px;
-		height: 350px;
-		left: 380px;
+		width: 500px;
+		height: 400px;
+		left: 300px;
 	}
 
 	.exp-right p {
@@ -984,21 +978,21 @@ a.site1 {
 
 	.exp-left p {
 		font-size: 25px;
-		width: 350px;
-		left: 40px;
+		width: 200px;
+		left: 160px;
 		font-size: 17.5px;
-		top: 50px;
+		top: 25px;
 	}
 	
 		/* Project Page */
 		.project1 {
             width: 350px;
-			left: 12.5px;
+			left: -10px;
         }
 
 		.project2 {
             width: 350px;
-			left: 12.5px;
+			left: -10px;
         }
 
 		
@@ -1021,23 +1015,16 @@ a.site1 {
 			top: 40px;
 			left: 65px;
 		}
-		
 
 		/* About Page */
 
 		.text {
-			width: 250px;
-			left: 0px;
-		}
-
-		/* About Page */
-
-		.text {
-			width: 375px;
+			width: 305px;
+			left: 0;
 		}
 		
 		#about p {
-			left: 50px;
+			left: 20px;
 			top: 10px;
 			width: 200px;
 			font-size: 12.5px;
@@ -1053,8 +1040,9 @@ a.site1 {
 
 		/* Footer Page */
 
+
 		.footer {
-			width: 390px;
+			width: 320px;
 			border-top-left-radius: 0;
 			left: -8px;
 		}
@@ -1086,6 +1074,548 @@ a.site1 {
 
 		#contact p {
 			visibility: hidden;
+		}
+
+		.contacts .fa-github {
+			top: 625px;
+		}
+		.contacts .fa-youtube {
+			top: 660px;
+		}
+
+		.copy span {
+			left: 30px;
+		}
+}
+
+@media (min-width: 325px) and (max-width: 350px) {
+	.is-inViewport {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+	.et-hero-tabs-container {
+		visibility: hidden;
+	}
+
+	.name h1 {
+		top: 100px;
+		left: 30px;
+		font-size: 50px;
+	}
+
+	.line2 {
+		top: 225px;
+		left: 105px;
+	}
+
+
+	.line3 {
+		top: 350px;
+		left: 40px;
+	}
+
+	.para p {
+		top: 250px;
+		left: 20px;
+	}
+
+	.resume {
+		top: 500px;
+		left: 113px;
+	}
+
+	.wrapper {
+		left: 15px;
+		top: 325px;
+	}
+
+	.thick-arrow-down {
+		left: 160px;
+	}
+
+	/* Experiecne Page */
+
+	.exp-right {
+		visibility: hidden;
+	}
+
+	.exp-left {
+		width: 500px;
+		height: 400px;
+		left: 300px;
+	}
+
+	.exp-right p {
+		visibility: hidden;
+	}
+
+	.exp-left p {
+		font-size: 25px;
+		width: 250px;
+		left: 150px;
+		font-size: 17.5px;
+		top: 50px;
+	}
+	
+		/* Project Page */
+		.project1 {
+            width: 350px;
+			left: -8px;
+        }
+
+		.project2 {
+            width: 350px;
+			left: -8px;
+        }
+
+		
+		.project1 .code {
+			top: 40px;
+			left: 125px;
+		}
+
+		.project1 .more {
+			top: 40px;
+			left: 65px;
+		}
+
+		.project2 .code1 {
+			top: 40px;
+			left: 125px;
+		}
+
+		.project2 .more1 {
+			top: 40px;
+			left: 65px;
+		}
+		
+
+
+		/* About Page */
+
+		.text {
+			width: 322px;
+			left: 0px;
+		}
+		
+		#about p {
+			left: 30px;
+			top: 10px;
+			width: 200px;
+			font-size: 12.5px;
+		}
+		
+		#about span {
+			font-size: 12.5px;
+		}
+		
+		#about img {
+			visibility: hidden;
+		}
+
+		/* Footer Page */
+
+		.footer {
+			width: 338px;
+			border-top-left-radius: 0;
+			left: -8px;
+		}
+
+		#contact h1 {
+			left: 25px;
+		}
+
+		#contact .lineName {
+			left: 25px;
+		}
+	
+		#contact h2 {
+			left: 180px;
+		}
+	
+		#contact .lineCon {
+			left: 180px;
+		}
+	
+		#contact a {
+			left: -1320px;
+		}
+	
+		#contact address {
+			left: -1320px;
+			top: 20px;
+		}
+
+		#contact p {
+			visibility: hidden;
+		}
+
+		.contacts .fa-github {
+			top: 625px;
+		}
+		.contacts .fa-youtube {
+			top: 660px;
+		}
+		.copy span {
+			left: 35px;
+		}
+}
+
+@media (min-width: 350px) and (max-width: 375px) {
+	.is-inViewport {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+	.et-hero-tabs-container {
+		visibility: hidden;
+	}
+
+	.name h1 {
+		top: 100px;
+		left: 70px;
+		font-size: 50px;
+	}
+
+	.line2 {
+		top: 225px;
+		left: 145px;
+	}
+
+
+	.line3 {
+		top: 375px;
+		left: 80px;
+	}
+
+	.para p {
+		top: 250px;
+		left: 60px;
+	}
+
+	.resume {
+		top: 500px;
+		left: 153px;
+	}
+
+	.wrapper {
+		left: 55px;
+		top: 350px;
+	}
+
+	.thick-arrow-down {
+		left: 200px;
+	}
+
+	/* Experiecne Page */
+
+	.exp-right {
+		visibility: hidden;
+	}
+
+	.exp-left {
+		width: 600px;
+		height: 400px;
+		left: 300px;
+	}
+
+	.exp-right p {
+		visibility: hidden;
+	}
+
+	.exp-left p {
+		font-size: 25px;
+		width: 250px;
+		left: 185px;
+		font-size: 17.5px;
+		top: 50px;
+	}
+	
+		/* Project Page */
+		.project1 {
+            width: 350px;
+			left: 35px;
+        }
+
+		.project2 {
+            width: 350px;
+			left: 35px;
+        }
+
+		
+		.project1 .code {
+			top: 40px;
+			left: 125px;
+		}
+
+		.project1 .more {
+			top: 40px;
+			left: 65px;
+		}
+
+		.project2 .code1 {
+			top: 40px;
+			left: 125px;
+		}
+
+		.project2 .more1 {
+			top: 40px;
+			left: 65px;
+		}
+		
+
+
+		/* About Page */
+
+		.text {
+			width: 350px;
+			left: 35px;
+		}
+		
+		#about p {
+			left: 30px;
+			top: 30px;
+			width: 215px;
+			font-size: 12.5px;
+		}
+		
+		#about span {
+			font-size: 12.5px;
+		}
+		
+		#about img {
+			visibility: hidden;
+		}
+
+		/* Footer Page */
+
+		.footer {
+			width: 375px;
+			border-top-left-radius: 0;
+			left: 20px;
+		}
+
+		#contact h1 {
+			left: 100px;
+		}
+
+		#contact .lineName {
+			left: 100px;
+		}
+	
+		#contact h2 {
+			left: 225px;
+		}
+	
+		#contact .lineCon {
+			left: 225px;
+		}
+	
+		#contact a {
+			left: -1275px;
+		}
+	
+		#contact address {
+			left: -1275px;
+			top: 20px;
+		}
+
+		#contact p {
+			visibility: hidden;
+		}
+
+		.contacts .fa-github {
+			top: 625px;
+		}
+		.contacts .fa-youtube {
+			top: 660px;
+		}
+		.copy span {
+			left: 105px;
+		}
+}
+
+@media (min-width: 375px) and (max-width: 400px) {
+	.is-inViewport {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+	.et-hero-tabs-container {
+		visibility: hidden;
+	}
+
+	.name h1 {
+		top: 100px;
+		left: 70px;
+		font-size: 50px;
+	}
+
+	.line2 {
+		top: 225px;
+		left: 145px;
+	}
+
+
+	.line3 {
+		top: 375px;
+		left: 80px;
+	}
+
+	.para p {
+		top: 250px;
+		left: 60px;
+	}
+
+	.resume {
+		top: 500px;
+		left: 153px;
+	}
+
+	.wrapper {
+		left: 55px;
+		top: 350px;
+	}
+
+	.thick-arrow-down {
+		left: 200px;
+	}
+
+	/* Experiecne Page */
+
+	.exp-right {
+		visibility: hidden;
+	}
+
+	.exp-left {
+		width: 600px;
+		height: 400px;
+		left: 300px;
+	}
+
+	.exp-right p {
+		visibility: hidden;
+	}
+
+	.exp-left p {
+		font-size: 25px;
+		width: 250px;
+		left: 185px;
+		font-size: 17.5px;
+		top: 50px;
+	}
+	
+		/* Project Page */
+		.project1 {
+            width: 350px;
+			left: 25px;
+        }
+
+		.project2 {
+            width: 350px;
+			left: 25px;
+        }
+
+		
+		.project1 .code {
+			top: 40px;
+			left: 125px;
+		}
+
+		.project1 .more {
+			top: 40px;
+			left: 65px;
+		}
+
+		.project2 .code1 {
+			top: 40px;
+			left: 125px;
+		}
+
+		.project2 .more1 {
+			top: 40px;
+			left: 65px;
+		}
+		
+
+
+		/* About Page */
+
+		.text {
+			width: 350px;
+			left: 30px;
+		}
+		
+		#about p {
+			left: 30px;
+			top: 30px;
+			width: 215px;
+			font-size: 12.5px;
+		}
+		
+		#about span {
+			font-size: 12.5px;
+		}
+		
+		#about img {
+			visibility: hidden;
+		}
+
+		/* Footer Page */
+
+		.footer {
+			width: 400px;
+			border-top-left-radius: 0;
+			left: 40px;
+		}
+
+		#contact h1 {
+			left: 25px;
+		}
+
+		#contact .lineName {
+			left: 25px;
+		}
+	
+		#contact h2 {
+			left: 200px;
+		}
+	
+		#contact .lineCon {
+			left: 200px;
+		}
+	
+		#contact a {
+			left: -1300px;
+		}
+	
+		#contact address {
+			left: -1300px;
+			top: 20px;
+		}
+
+		#contact p {
+			visibility: hidden;
+		}
+
+		.contacts .fa-github {
+			top: 625px;
+		}
+		.contacts .fa-youtube {
+			top: 660px;
+		}
+		.copy span {
+			left: 35px;
 		}
 }
 

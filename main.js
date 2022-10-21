@@ -21,9 +21,10 @@ const inViewport = (entries, observer) => {
     entries.forEach(entry => {
       entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
       const classes = document.querySelectorAll('div');
+      var x = window.matchMedia("(min-width: 700px)")
 
       for (const classLook of classes) {
-        if (classLook.matches('.footer.is-inViewport')) {
+        if (classLook.matches('.footer.is-inViewport') && x.matches) {
            youtube.style.transition="all 2s";
            youtube.style.transform="translateX(175px)" + "translateY(50px)" + "scale(2, 2)";
            youtube.style.color = "beige";
