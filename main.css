@@ -919,6 +919,14 @@ a.site1 {
 /* MEDIA QUERIES */
 
 @media (min-width: 300px) and (max-width: 400px) {
+	.is-inViewport {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+	
 	.et-hero-tabs-container {
 		visibility: hidden;
 	}
