@@ -792,9 +792,10 @@ a.site1 {
 	top: 3650px;
 	transition: .5s all;
 	color: beige;
-	text-align: center;
-	left: 870px;
+	left: 100px;
+
 }
+
 
 /* MEDIA QUERIES */
 
@@ -933,56 +934,6 @@ a.site1 {
 			display: none;
 		}
 
-		/* Footer Page */
-
-
-		.footer {
-			width: 320px;
-			border-top-left-radius: 0;
-			left: -8px;
-		}
-
-		#contact h1 {
-			left: 25px;
-		}
-
-		#contact .lineName {
-			left: 25px;
-		}
-	
-		#contact h2 {
-			left: 200px;
-		}
-	
-		#contact .lineCon {
-			left: 200px;
-		}
-	
-		#contact a {
-			left: -1300px;
-		}
-	
-		#contact address {
-			left: -1300px;
-			top: 20px;
-		}
-
-		#contact p {
-			visibility: hidden;
-			max-height: 0;
-			display: none;
-		}
-
-		.contacts .fa-github {
-			top: 625px;
-		}
-		.contacts .fa-youtube {
-			top: 660px;
-		}
-
-		.copy span {
-			left: 30px;
-		}
 }
 
 @media (min-width: 325px) and (max-width: 350px) {
@@ -1122,54 +1073,7 @@ a.site1 {
 			display: none;
 		}
 
-		/* Footer Page */
 
-		.footer {
-			width: 338px;
-			border-top-left-radius: 0;
-			left: -8px;
-		}
-
-		#contact h1 {
-			left: 25px;
-		}
-
-		#contact .lineName {
-			left: 25px;
-		}
-	
-		#contact h2 {
-			left: 180px;
-		}
-	
-		#contact .lineCon {
-			left: 180px;
-		}
-	
-		#contact a {
-			left: -1320px;
-		}
-	
-		#contact address {
-			left: -1320px;
-			top: 20px;
-		}
-
-		#contact p {
-			visibility: hidden;
-			max-height: 0;
-			display: none;
-		}
-
-		.contacts .fa-github {
-			top: 625px;
-		}
-		.contacts .fa-youtube {
-			top: 660px;
-		}
-		.copy span {
-			left: 35px;
-		}
 }
 
 @media (min-width: 350px) and (max-width: 375px) {
@@ -1309,54 +1213,7 @@ a.site1 {
 			display: none;
 		}
 
-		/* Footer Page */
 
-		.footer {
-			width: 375px;
-			border-top-left-radius: 0;
-			left: 20px;
-		}
-
-		#contact h1 {
-			left: 100px;
-		}
-
-		#contact .lineName {
-			left: 100px;
-		}
-	
-		#contact h2 {
-			left: 225px;
-		}
-	
-		#contact .lineCon {
-			left: 225px;
-		}
-	
-		#contact a {
-			left: -1275px;
-		}
-	
-		#contact address {
-			left: -1275px;
-			top: 20px;
-		}
-
-		#contact p {
-			visibility: hidden;
-			max-height: 0;
-			display: none;
-		}
-
-		.contacts .fa-github {
-			top: 625px;
-		}
-		.contacts .fa-youtube {
-			top: 660px;
-		}
-		.copy span {
-			left: 105px;
-		}
 }
 
 @media (min-width: 375px) and (max-width: 400px) {
@@ -1496,54 +1353,7 @@ a.site1 {
 			display: none;
 		}
 
-		/* Footer Page */
 
-		.footer {
-			width: 400px;
-			border-top-left-radius: 0;
-			left: 40px;
-		}
-
-		#contact h1 {
-			left: 25px;
-		}
-
-		#contact .lineName {
-			left: 25px;
-		}
-	
-		#contact h2 {
-			left: 200px;
-		}
-	
-		#contact .lineCon {
-			left: 200px;
-		}
-	
-		#contact a {
-			left: -1300px;
-		}
-	
-		#contact address {
-			left: -1300px;
-			top: 20px;
-		}
-
-		#contact p {
-			visibility: hidden;
-			max-height: 0;
-			display: none;
-		}
-
-		.contacts .fa-github {
-			top: 625px;
-		}
-		.contacts .fa-youtube {
-			top: 660px;
-		}
-		.copy span {
-			left: 35px;
-		}
 }
 
 @media (min-width: 400px) and (max-width: 500px) {
@@ -1562,37 +1372,37 @@ a.site1 {
 
 	.name h1 {
 		top: 100px;
-		left: 25px;
+		left: 60px;
 	}
 
 	.line2 {
 		top: 225px;
-		left: 115px;
+		left: 150px;
 	}
 
 
 	.line3 {
 		top: 350px;
-		left: 50px;
+		left: 75px;
 	}
 
 	.para p {
 		top: 250px;
-		left: 45px;
+		left: 80px;
 	}
 
 	.resume {
 		top: 500px;
-		left: 135px;
+		left: 170px;
 	}
 
 	.wrapper {
-		left: 25px;
+		left: 60px;
 		top: 325px;
 	}
 
 	.thick-arrow-down {
-		left: 180px;
+		left: 215px;
 	}
 
 	/* Experiecne Page */
@@ -1606,7 +1416,7 @@ a.site1 {
 	.exp-left {
 		width: 405px;
 		height: 350px;
-		left: 380px;
+		left: 415px;
 	}
 
 	.exp-right p {
@@ -1618,26 +1428,26 @@ a.site1 {
 	.exp-left p {
 		font-size: 25px;
 		width: 350px;
-		left: 40px;
+		left: 35px;
 		font-size: 17.5px;
 		top: 50px;
 	}
 	
 		/* Project Page */
 		.project1 {
-            width: 350px;
+            width: 400px;
 			left: 12.5px;
         }
 
 		.project2 {
-            width: 350px;
+            width: 400px;
 			left: 12.5px;
         }
 
 		
 		.project1 .code {
 			top: 40px;
-			left: 125px;
+			left: 170px;
 		}
 
 		.project1 .more {
@@ -1647,7 +1457,7 @@ a.site1 {
 
 		.project2 .code1 {
 			top: 40px;
-			left: 125px;
+			left: 170px;
 		}
 
 		.project2 .more1 {
@@ -1659,20 +1469,14 @@ a.site1 {
 		/* About Page */
 
 		.text {
-			width: 250px;
-			left: 0px;
-		}
-
-		/* About Page */
-
-		.text {
-			width: 375px;
+			width: 400px;
+			left: 15px;
 		}
 		
 		#about p {
 			left: 50px;
-			top: 10px;
-			width: 200px;
+			top: 25px;
+			width: 225px;
 			font-size: 12.5px;
 		}
 		
@@ -1686,44 +1490,7 @@ a.site1 {
 			display: none;
 		}
 
-		/* Footer Page */
 
-		.footer {
-			width: 390px;
-			border-top-left-radius: 0;
-			left: -8px;
-		}
-
-		#contact h1 {
-			left: 25px;
-		}
-
-		#contact .lineName {
-			left: 25px;
-		}
-	
-		#contact h2 {
-			left: 200px;
-		}
-	
-		#contact .lineCon {
-			left: 200px;
-		}
-	
-		#contact a {
-			left: -1300px;
-		}
-	
-		#contact address {
-			left: -1300px;
-			top: 20px;
-		}
-
-		#contact p {
-			visibility: hidden;
-			max-height: 0;
-			display: none;
-		}
 }
 
   @media (min-width: 500px) and (max-width: 600px) {
@@ -1845,34 +1612,7 @@ a.site1 {
 			display: none;
 		}
 
-		/* Footer Page */
 
-		.footer {
-			width: 675px;
-		}
-	
-		#contact h2 {
-			left: 300px;
-		}
-	
-		#contact .lineCon {
-			left: 300px;
-		}
-	
-		#contact a {
-			left: -1200px;
-		}
-	
-		#contact address {
-			left: -1200px;
-			top: 60px;
-		}
-
-		#contact p {
-			visibility: hidden;
-			max-height: 0;
-			display: none;
-		}
 }
 
   @media (min-width: 600px) and (max-width: 700px) {
@@ -1970,33 +1710,7 @@ a.site1 {
 			display: none;
 		}
 
-		/* Footer Page */
 
-		.footer {
-			width: 675px;
-		}
-	
-		#contact h2 {
-			left: 300px;
-		}
-	
-		#contact .lineCon {
-			left: 300px;
-		}
-	
-		#contact a {
-			left: -1200px;
-		}
-	
-		#contact address {
-			left: -1200px;
-		}
-
-		#contact p {
-			visibility: hidden;
-			max-height: 0;
-			display: none;
-		}
 }
 
 	@media (min-width: 700px) and (max-width: 900px) {
@@ -2093,27 +1807,6 @@ a.site1 {
 			display: none;
 		}
 
-		/* Footer Page */
-
-		.footer {
-			width: 875px;
-		}
-	
-		#contact h2 {
-			left: 525px;
-		}
-	
-		#contact .lineCon {
-			left: 525px;
-		}
-	
-		#contact a {
-			left: -975px;
-		}
-	
-		#contact address {
-			left: -975px;
-		}
 	}
 	
 	@media (min-width: 900px) and (max-width: 1100px) {
@@ -2207,27 +1900,6 @@ a.site1 {
 			height: 400px;
 		}
 
-		/* Footer Page */
-
-		.footer {
-			width: 1075px;
-		}
-	
-		#contact h2 {
-			left: 725px;
-		}
-	
-		#contact .lineCon {
-			left: 725px;
-		}
-	
-		#contact a {
-			left: -775px;
-		}
-	
-		#contact address {
-			left: -775px;
-		}
 	}
 	
 
@@ -2308,28 +1980,6 @@ a.site1 {
 		#about img {
 			left: 75px;
 		}
-
-		/* Footer Page */
-
-		.footer {
-			width: 1255px;
-		}
-	
-		#contact h2 {
-			left: 950px;
-		}
-	
-		#contact .lineCon {
-			left: 950px;
-		}
-	
-		#contact a {
-			left: -550px;
-		}
-	
-		#contact address {
-			left: -550px;
-		}
 	}
 
 	
@@ -2407,27 +2057,6 @@ a.site1 {
 			left: 150px;
 		}
 
-		/* Footer Page */
-
-		.footer {
-			width: 1450px;
-		}
-	
-		#contact h2 {
-			left: 1175px;
-		}
-	
-		#contact .lineCon {
-			left: 1175px;
-		}
-	
-		#contact a {
-			left: -325px;
-		}
-	
-		#contact address {
-			left: -325px;
-		}
 	}
 
 	
@@ -2497,27 +2126,6 @@ a.site1 {
 			left: 300px;
 		}
 
-		/* Footer Page */
-
-		.footer {
-			width: 1675px;
-		}
-
-		#contact h2 {
-			left: 1400px;
-		}
-
-		#contact .lineCon {
-			left: 1400px;
-		}
-
-		#contact a {
-			left: -100px;
-		}
-
-		#contact address {
-			left: -100px;
-		}
 	}
 
 
