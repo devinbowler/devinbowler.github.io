@@ -761,6 +761,7 @@ a.site1 {
 	height: 500px;
 	width: 400px;
 	border-radius: 75px;
+	max-width: 100%;
 }
 
 
@@ -922,6 +923,8 @@ a.site1 {
 
 	.et-hero-tabs-container {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.name h1 {
@@ -964,6 +967,8 @@ a.site1 {
 
 	.exp-right {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left {
@@ -974,6 +979,8 @@ a.site1 {
 
 	.exp-right p {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left p {
@@ -1036,6 +1043,8 @@ a.site1 {
 		
 		#about img {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		/* Footer Page */
@@ -1074,6 +1083,8 @@ a.site1 {
 
 		#contact p {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		.contacts .fa-github {
@@ -1099,6 +1110,8 @@ a.site1 {
 
 	.et-hero-tabs-container {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.name h1 {
@@ -1141,6 +1154,8 @@ a.site1 {
 
 	.exp-right {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left {
@@ -1151,6 +1166,8 @@ a.site1 {
 
 	.exp-right p {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left p {
@@ -1215,6 +1232,8 @@ a.site1 {
 		
 		#about img {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		/* Footer Page */
@@ -1252,6 +1271,8 @@ a.site1 {
 
 		#contact p {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		.contacts .fa-github {
@@ -1276,6 +1297,8 @@ a.site1 {
 
 	.et-hero-tabs-container {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.name h1 {
@@ -1318,6 +1341,8 @@ a.site1 {
 
 	.exp-right {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left {
@@ -1328,6 +1353,8 @@ a.site1 {
 
 	.exp-right p {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left p {
@@ -1392,6 +1419,8 @@ a.site1 {
 		
 		#about img {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		/* Footer Page */
@@ -1429,6 +1458,8 @@ a.site1 {
 
 		#contact p {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		.contacts .fa-github {
@@ -1453,6 +1484,8 @@ a.site1 {
 
 	.et-hero-tabs-container {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.name h1 {
@@ -1495,6 +1528,8 @@ a.site1 {
 
 	.exp-right {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left {
@@ -1505,6 +1540,8 @@ a.site1 {
 
 	.exp-right p {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left p {
@@ -1569,6 +1606,8 @@ a.site1 {
 		
 		#about img {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		/* Footer Page */
@@ -1606,6 +1645,8 @@ a.site1 {
 
 		#contact p {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		.contacts .fa-github {
@@ -1629,6 +1670,8 @@ a.site1 {
 	}
 	.et-hero-tabs-container {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.name h1 {
@@ -1670,6 +1713,8 @@ a.site1 {
 
 	.exp-right {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left {
@@ -1680,6 +1725,8 @@ a.site1 {
 
 	.exp-right p {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left p {
@@ -1749,6 +1796,8 @@ a.site1 {
 		
 		#about img {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		/* Footer Page */
@@ -1786,6 +1835,8 @@ a.site1 {
 
 		#contact p {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 }
 
@@ -1827,6 +1878,8 @@ a.site1 {
 
 	.exp-right {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left {
@@ -1837,6 +1890,8 @@ a.site1 {
 
 	.exp-right p {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left p {
@@ -1900,6 +1955,8 @@ a.site1 {
 		
 		#about img {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		/* Footer Page */
@@ -1927,12 +1984,16 @@ a.site1 {
 
 		#contact p {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 }
 
   @media (min-width: 600px) and (max-width: 700px) {
 	.et-hero-tabs-container {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.name h1 {
@@ -1968,6 +2029,8 @@ a.site1 {
 
 	.exp-right {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left {
@@ -1978,6 +2041,8 @@ a.site1 {
 
 	.exp-right p {
 		visibility: hidden;
+		max-height: 0;
+		display: none;
 	}
 
 	.exp-left p {
@@ -2015,6 +2080,8 @@ a.site1 {
 		
 		#about img {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		/* Footer Page */
@@ -2041,6 +2108,8 @@ a.site1 {
 
 		#contact p {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 }
 
@@ -2078,6 +2147,8 @@ a.site1 {
 
 		.exp-right {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 	
 		.exp-left {
@@ -2088,6 +2159,8 @@ a.site1 {
 	
 		.exp-right p {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 	
 		.exp-left p {
@@ -2130,6 +2203,8 @@ a.site1 {
 	
 		#about img {
 			visibility: hidden;
+			max-height: 0;
+			display: none;
 		}
 
 		/* Footer Page */
