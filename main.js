@@ -11,6 +11,8 @@ const observer = new IntersectionObserver((entries) => {
 const youtube = document.getElementsByClassName("fa-youtube")[0];
 const linkedin = document.getElementsByClassName("fa-linkedin")[0];
 const github = document.getElementsByClassName("fa-github")[0];
+const envelope = document.getElementsByClassName("fa-envelope")[0];
+const phone = document.getElementsByClassName("fa-phone")[0];
 const line = document.getElementsByClassName("line")[0];
 
 const hiddenElements = document.querySelectorAll('.hidden');
@@ -25,15 +27,22 @@ const inViewport = (entries, observer) => {
 
       for (const classLook of classes) {
         if (classLook.matches('.footer.is-inViewport') && x.matches) {
-           youtube.style.transition="all 2s";
-           youtube.style.transform="translateX(175px)" + "translateY(75px)" + "scale(2, 2)";
-           youtube.style.color = "beige";
+          console.log("yo");
            linkedin.style.transition="all 2s";
-           linkedin.style.transform="translateX(125px)" + "translateY(25px)" + "scale(2, 2)";
+           linkedin.style.transform="translateX(425px)" + "translateY(0px)" + "scale(2, 2)";
            linkedin.style.color = "beige";
+           youtube.style.transition="all 2s";
+           youtube.style.transform="translateX(675px)" + "translateY(50px)" + "scale(2, 2)";
+           youtube.style.color = "beige";
            github.style.transition="all 2s";
-           github.style.transform="translateX(225px)" + "translateY(125px)" + "scale(2, 2)";
+           github.style.transform="translateX(925px)" + "translateY(100px)" + "scale(2, 2)";
            github.style.color = "beige";
+           phone.style.transition="all 2s";
+           phone.style.transform="translateX(1175px)" + "translateY(150px)" + "scale(2, 2)";
+           phone.style.color = "beige";
+           envelope.style.transition="all 2s";
+           envelope.style.transform="translateX(1425px)" + "translateY(200px)" + "scale(2, 2)";
+           envelope.style.color = "beige";
            line.style.transition="all 2s";
            line.style.transform="translateY(100%)";
            line.style.visibility = "hidden";
@@ -48,6 +57,12 @@ const inViewport = (entries, observer) => {
           github.style.transition="all 2s";
           github.style.transform="translateX(0px)" + "translateY(0px)" + "scale(1, 1)";
           github.style.color = "white";
+          phone.style.transition="all 2s";
+          phone.style.transform="translateX(0px)" + "translateY(0px)" + "scale(1, 1)";
+          phone.style.color = "white";
+          envelope.style.transition="all 2s";
+          envelope.style.transform="translateX(0px)" + "translateY(0px)" + "scale(1, 1)";
+          envelope.style.color = "white";
           line.style.transition="all 2s";
           line.style.transform="translateY(0px)";
           line.style.visibility = "visible";
