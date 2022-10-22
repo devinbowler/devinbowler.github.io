@@ -4,11 +4,6 @@
     background-color:rgb(24,22,25);
 }
 
-html {
-	scroll-behavior: smooth;
-	overflow-x: hidden;
-  }
-
   body {
 	overflow-x: hidden;
   }
@@ -211,6 +206,22 @@ a {
 	position: absolute;
 	left: 15px;
 	top: 600px;
+	background: transparent;
+	color: white;
+}
+
+.fa-phone {
+	position: absolute;
+	left: 15px;
+	top: 550px;
+	background: transparent;
+	color: white;
+}
+
+.fa-envelope {
+	position: absolute;
+	left: 15px;
+	top: 500px;
 	background: transparent;
 	color: white;
 }
@@ -776,143 +787,14 @@ a.site1 {
 
 #contact {
 	position: absolute;
+	font-size: 10px;
+	letter-spacing: 1px;
 	top: 3650px;
 	transition: .5s all;
-}
-
-.footer {
-	color: #fff;
-}
-
-.footer h1 {
-	position: relative;
-	font-family: 'Jost', sans-serif;
-	font-size: 45px;
-	left: 135px;
-	top: 20px;
-	background: transparent;
-	transition: .5s all;
-}
-
-.footer p {
-	position: relative;
-	font-family: 'Quicksand', sans-serif;
-	background: transparent;
-	top: 50px;
-	left: 135px;
-	transition: .5s all;
-}
-
-.footer span {
-	position: relative;
-    font-family: 'Quicksand', sans-serif;
-	top: 50px;
-	font-size: 10px;
-	left: 135px;
-	background: transparent;
-	transition: .5s all;
-}
-
-.footer h2 {
-	position: absolute;
-    font-family: 'Jost', sans-serif;
-	font-size: 40px;
-	top: 25px;
-    left: 1500px;
-	background: transparent;
-	transition: .5s all;
-}
-
-.footer .lineName {
-	position: relative;
-    top: 50px;
-	left: 135px;
-	width: 75px;
-	height: 3px;
-	background: white;
-	transition: .5s all;
-}
-
-.footer .lineCon {
-	position: absolute;
-    top: 50px;
-	left: 1500px;
-	width: 75px;
-	height: 3px;
-	background: white;
-	transition: .5s all;
-}
-
-.footer .copy {
-	position: absolute;
-    top: 210px;
-	background: transparent;
-    left: 0px;
-}
-
-.footer .contact-info {
-	position: absolute;
-    top: 175px;
-    left: 1500px;
-	text-align: left;
-	background: transparent;
-	text-decoration: none;
-	transition: .5s all;
-}
-
-.footer .contact-info p {
-	position: absolute;
-    top: 0px;
-    left: 0px;
-	text-align: left;
-	background: transparent;
-	text-decoration: none;
-	transition: .5s all;
-}
-
-.footer .contact-info a {
-	position: absolute;
 	color: beige;
-    top: -50px;
-    left: 0px;
-	text-align: left;
-	background: transparent;
-	text-decoration: none;
-	transition: .5s all;
+	text-align: center;
+	left: 870px;
 }
-
-.footer .contact-info a span {
-	position: absolute;
-	color: beige;
-    top: 40px;
-	font-size: 15px;
-	width: 100px;
-    left: 0px;
-	text-align: left;
-	background: transparent;
-	text-decoration: none;
-	transition: .5s all;
-}
-
-.footer .contact-info address {
-	position: absolute;
-    top: 50px;
-	width: 150px;
-    left: 0px;
-	text-align: left;
-	background: transparent;
-	text-decoration: none;
-	transition: .5s all;
-}
-
-[data-inviewport="fade-inNew"] { 
-	transition: 1.5s;
-	transform: translateX(100%);
-  }
-  
-  [data-inviewport="fade-inNew"].is-inViewport { 
-	transform: translateX(0);
-  }
 
 /* MEDIA QUERIES */
 
