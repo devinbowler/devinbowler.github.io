@@ -1356,7 +1356,7 @@ a.site1 {
 
 }
 
-@media (min-width: 400px) and (max-width: 500px) {
+@media (min-width: 400px) and (max-width: 450px) {
 	.is-inViewport {
 		-webkit-transition: none !important;
 		-moz-transition: none !important;
@@ -1371,7 +1371,143 @@ a.site1 {
 	}
 
 	.name h1 {
-		font-size: 10px;
+		top: 100px;
+		left: 60px;
+		font-size: 50px;
+	}
+
+	.line2 {
+		top: 225px;
+		left: 130px;
+	}
+
+
+	.line3 {
+		top: 350px;
+		left: 55px;
+	}
+
+	.para p {
+		top: 250px;
+		left: 60px;
+	}
+
+	.resume {
+		top: 500px;
+		left: 150px;
+	}
+
+	.wrapper {
+		left: 40px;
+		top: 325px;
+	}
+
+	.thick-arrow-down {
+		left: 195px;
+	}
+
+	/* Experiecne Page */
+
+	.exp-right {
+		visibility: hidden;
+		max-height: 0;
+		display: none;
+	}
+
+	.exp-left {
+		width: 405px;
+		height: 350px;
+		left: 400px;
+	}
+
+	.exp-right p {
+		visibility: hidden;
+		max-height: 0;
+		display: none;
+	}
+
+	.exp-left p {
+		font-size: 25px;
+		width: 350px;
+		left: 35px;
+		font-size: 17.5px;
+		top: 50px;
+	}
+	
+		/* Project Page */
+		.project1 {
+            width: 400px;
+			left: 8px;
+        }
+
+		.project2 {
+            width: 400px;
+			left: 8px;
+        }
+
+		
+		.project1 .code {
+			top: 40px;
+			left: 170px;
+		}
+
+		.project1 .more {
+			top: 40px;
+			left: 65px;
+		}
+
+		.project2 .code1 {
+			top: 40px;
+			left: 170px;
+		}
+
+		.project2 .more1 {
+			top: 40px;
+			left: 65px;
+		}
+		
+
+		/* About Page */
+
+		.text {
+			width: 400px;
+			left: 5px;
+		}
+		
+		#about p {
+			left: 50px;
+			top: 25px;
+			width: 225px;
+			font-size: 12.5px;
+		}
+		
+		#about span {
+			font-size: 12.5px;
+		}
+		
+		#about img {
+			visibility: hidden;
+			max-height: 0;
+			display: none;
+		}
+
+}
+
+@media (min-width: 450px) and (max-width: 500px) {
+	.is-inViewport {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+	.et-hero-tabs-container {
+		visibility: hidden;
+		max-height: 0;
+		display: none;
+	}
+
+	.name h1 {
 		top: 100px;
 		left: 60px;
 	}
