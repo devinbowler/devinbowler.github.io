@@ -1371,6 +1371,7 @@ a.site1 {
 	}
 
 	.name h1 {
+		font-size: 10px;
 		top: 100px;
 		left: 60px;
 	}
