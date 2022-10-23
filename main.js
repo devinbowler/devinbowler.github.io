@@ -23,11 +23,10 @@ const inViewport = (entries, observer) => {
     entries.forEach(entry => {
       entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
       const classes = document.querySelectorAll('div');
-      var x = window.matchMedia("(min-width: 700px)")
+      var one = window.matchMedia("(min-width: 1700px)");
 
       for (const classLook of classes) {
-        if (classLook.matches('.footer.is-inViewport') && x.matches) {
-          console.log("yo");
+        if (classLook.matches('.footer.is-inViewport') && one.matches) {
            linkedin.style.transition="all 2s";
            linkedin.style.transform="translateX(425px)" + "translateY(0px)" + "scale(2, 2)";
            linkedin.style.color = "beige";
@@ -47,6 +46,7 @@ const inViewport = (entries, observer) => {
            line.style.transform="translateY(100%)";
            line.style.visibility = "hidden";
         }
+      
         else if (classLook.matches('.is-inViewport')) {
           youtube.style.transition="all 2s";
           youtube.style.transform="translateX(0px)" + "scale(1, 1)";
