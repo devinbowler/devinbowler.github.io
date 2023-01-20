@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images\icons8-code-16 (1).png" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Devins Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-links">
+                <button class="close-nav" onclick="closemenu()"><i class="fa fa-times"></i></button>
+                <ul class="links">
+                    <li><a href="#experiencePoint">//&nbsp;&nbsp; Experience</a></li>
+                    <li><a href="#projectPoint">//&nbsp;&nbsp; Work</a></li>
+                    <li><a href="#aboutPoint">//&nbsp;&nbsp; About</a></li>
+                    <li><a href="#contactPoint">//&nbsp;&nbsp; Contact</a></li>
+                </ul>
+            </div>
+          <div class="menu-trigger"><button onclick="openmenu()"><i class="fa fa-bars"></i></button></div>
+          </div>
+      </header>
+
+
+      <div class="container">
+        <div class="name">
+            <div class="block"></div>
+            <h1>Devin Bowler</h1>
+        </div>
+
+        <div class="line"></div>
+
+        <p class="description">
+            Young developer based near Boston,
+        Massachusetts, with interest in machine learning
+                and front-end development.
+        </p>
+
+        <div class="linksUnder">
+            <a class="resume" href="Devin Bowler Resume.docx.pdf">Resume</a>
+        </div>
+
+        <div class="experience">
+
+        <div id="experiencePoint"></div>
+
+            <h1 class="mainTitle">Experience</h1>
+            <div class="underline">
+                <div class="lineTitle1"></div>
+                    <i class="fa fa-star"></i>
+                <div class="lineTitle2"></div>
+            </div>
+
+        <div class="expCon">
+          <div class="experience_box">
+
+            <div class="icon">
+                <i class="fa fa-pencil"></i>
+            </div>
+            <div class="title">
+                <h1>Computer Science Tutor</h1>
+                <h2>Acedemic Success Center</h2>
+                    <div class="workdesc">
+                        <p>Student tutoring at university, focusing on helping young developers in computer science. 
+                            Experienced how to work with many different types of learners and people in a programming 
+                            context, and further solidified my fundamentals in programming. I have gained valuable 
+                            experience in teaching and mentoring, which has helped me to better understand and communicate 
+                            complex concepts to others.</p>
+                    </div>
+
+                    <div class="lineWork"></div>
+            </div>
+          </div>
+
+
+          <div class="experience_box">
+            <div class="icon">
+                <i class="fa fa-microphone"></i>
+            </div>
+            <div class="title">
+                <h1>Audio Video Technician</h1>
+                <h2>Oakmont</h2>
+                    <div class="workdesc">
+                        <p>Developed a proficiency
+                            in operating and maintaining audio and video equipment. Experience setting up and 
+                            troubleshooting audio and video systems for live events, conferences and corporate meetings. 
+                            Skilled in signal routing, audio mixing, and video switching, and effectively communicating with clients and 
+                            team members while preparing and managing large events.</p>
+                    </div>
+
+                    <div class="lineWork"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        </div>
+
+
+
+
+        <div class="projectContent">
+            <div id="projectPoint"></div>
+            <h1 class="mainTitle">Projects</h1>
+            <div class="underline">
+                <div class="lineTitle1"></div>
+                    <i class="fa fa-star"></i>
+                <div class="lineTitle2"></div>
+            </div>
+            
+        <div class="projects">
+          <div class="project">
+            <div class="content">
+                <h1>01. reinforcement driving.</h1>
+                <p>Created an autonomous driving simulation using the NEAT library in Python,
+                    which improved driving performance by adjusting the neural network's weights
+                    based on the car's indicators. </p>
+                <div class="tags">
+
+                    <a target="_blank" href="https://github.com/devinbowler/Reinforcement-Autonomous-Driving">
+                        <i class="fa fa-github"></i>
+                    </a>
+
+                    <a target="_blank" href="https://github.com/devinbowler/Reinforcement-Autonomous-Driving/blob/main/README.md">
+                        <i class="fa fa-external-link"></i>
+                    </a>
+
+                    <div class="software">
+                        <a>Python</a>
+                        <a>NEAT</a>
+                    </div>
+
+                </div>
+                <i onclick="flip(1)" class="fa fa-refresh"></i>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+                <h1>02. budget application.</h1>
+                <p>Developed a budget application using HTML, CSS, and JavaScript. 
+                    Implemented a sleek user interface for improved user experience.
+                    Established a system for future proof updates and time adjustments.</p>
+                <div class="tags">
+
+                    <a target="_blank" href="https://github.com/devinbowler/BudgetApplication.github.io">
+                        <i class="fa fa-github"></i>
+                    </a>
+
+                    <a target="_blank" href="https://devinbowler.com/BudgetApplication.github.io/">
+                        <i class="fa fa-external-link"></i>
+                    </a>
+
+                    <div class="software">
+                        <a>CSS</a>
+                        <a>JavaScript</a>
+                    </div>
+
+                </div>
+                <i onclick="flip(2)" class="fa fa-refresh"></i>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="content">
+                <h1>03. exercise application.</h1>
+                <p>Developed a React-based fitness application that utilized
+                     an API to allow users to view and complete workouts. 
+                     Categorized videos for different body parts were provided
+                      to enhance the user's workout experience.</p>
+                <div class="tags">
+
+                  <a target="_blank" href="https://github.com/devinbowler/Exercise-App">
+                    <i class="fa fa-github"></i>
+                  </a>
+
+                  <a target="_blank" href="https://github.com/devinbowler/Exercise-App/blob/master/README.md">
+                    <i class="fa fa-external-link"></i>
+                </a>
+
+                <div class="software">
+                    <a>React</a>
+                    <a>API</a>
+                </div>
+
+                </div>
+                <i onclick="flip(3)" class="fa fa-refresh"></i>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div class="about">
+
+            <div id="aboutPoint"></div>
+            <h1 class="mainTitle">About Me</h1>
+            <div class="underline">
+                <div class="lineTitle1"></div>
+                    <i class="fa fa-star"></i>
+                <div class="lineTitle2"></div>
+            </div>
+
+        <div class="aboutBox">
+            <img src="images/Devin_Senior_Photo.jpg" />
+            <div class="boxBorder"></div>
+            <div class="boxBorderHide"></div>
+            <div class="text">
+                <p>I am a young and ambitious developer looking for experience 
+                    in the software development field. My goal is to make a 
+                    meaningful impact in the tech industry through innovation 
+                    and diversifying my skills. I have experience in front-end 
+                    development and am proficient in HTML, CSS, and JavaScript. 
+                    I am also expanding my skills in Java, Python, and C++. I 
+                    am constantly seeking opportunities to improve my knowledge 
+                    and skills in software development.</p>
+
+                    <a class="buttonMore" href="https://github.com/devinbowler" target="_blank">Learn More</a>
+
+                    
+                </div> 
+            </div>
+        </div>
+
+        <div class="contact">
+
+            <div id="contactPoint"></div>
+            <h1 class="mainTitle">Contact</h1>
+            <div class="underline">
+                <div class="lineTitle1"></div>
+                    <i class="fa fa-star"></i>
+                <div class="lineTitle2"></div>
+            </div>
+
+            <div class="footerDesc">
+                <p>If you are interested in my work as a software developer, please feel free to reach out to me. 
+                    You can find my contact information below, and any information needed.</p>
+            </div>
+            <div class="footerIcons">
+                <a href="https://github.com/devinbowler" target="_blank" class="fa fa-github"></a>
+                <a href="mailto:devinbowler@gmail.com" target="_blank" class="fa fa-envelope"></a>
+                <a href="tel:9788556514" target="_blank" class="fa fa-phone"></a>
+                <a href="https://www.linkedin.com/in/devin-bowler-369616219/" target="_blank" class="fa fa-linkedin-square"></a>
+                <a href="https://www.youtube.com/channel/UC9cdOWpenoXrl0hLMh9oy8g/featured" target="_blank" class="fa fa-youtube"></a>
+            </div>
+            <div class="footerCopy">
+                <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Devin Bowler. All rights reserved.</p>
+            </div>
+        </div>
+
+      </div>
+    
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
