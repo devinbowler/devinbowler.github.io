@@ -546,6 +546,36 @@ section {
     width: 60%;
     margin: 0 auto;
   }
+
+  .experience-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.experience-container a:hover {
+    text-decoration: none;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #1977ea;
+    font-size: 0.8em;
+    border: 1px solid #48484864;
+    text-decoration: none; /* Add this line */
+}
+
+.skills-used {
+    display: flex; /* Add this line */
+    flex-wrap: wrap; /* Add this line */
+    gap: 5px; /* Add this line */
+    width: max-content;
+    max-width: 400px; /* Adjust this value based on the width of your tags */
+}
   
   .experience-block {
     display: flex;
@@ -556,6 +586,32 @@ section {
     border-radius: 20px;
     transition: all .3s;
   }
+
+  a > .experience-block {
+    text-decoration: none;
+    color: inherit;
+}
+
+a > .experience-block:hover {
+    text-decoration: none;
+}
+
+a > .experience-block > .skill-tag {
+    text-decoration: none;
+}
+
+a > .experience-block,
+a > .experience-block:hover,
+a > .experience-block > .skill-tag {
+    text-decoration: none;
+    color: black; /* or whatever color you want the text to be */
+}
+
+.skill-tag {
+    list-style: none;
+}
+
+
 
   .job-title {
     font-weight: 600;
@@ -686,8 +742,9 @@ section {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding: 0 0px; /* Add this line */
     margin-bottom: 150px;
-  }
+}
 
   #projects h2 {
     font-family: 'Quicksand', sans-serif;
@@ -714,7 +771,9 @@ section {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
+    box-sizing: border-box; /* Add this line */
+}
+
   
   .project-image {
     position: absolute;
@@ -1013,8 +1072,8 @@ section {
     }
 
     .project-modal-content {
-        width: 400px;
-        height: 750px;
+        width: 90%;  /* Adjust as needed */
+        height: 90%;  /* Adjust as needed */
     }
 
     .project-item {
