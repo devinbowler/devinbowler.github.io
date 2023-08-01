@@ -425,6 +425,7 @@ a > .experience-block > .skill-tag {
     margin-top: -10px;
     font-size: 22px;
     position: relative;
+    text-align: left;
 }
 
 .job-title::before {
