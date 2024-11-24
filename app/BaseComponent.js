@@ -1,6 +1,6 @@
 // Base Component to make global methods required.
 
-export class BaseComponent() {
+export class BaseComponent {
   constructor() {
     this.container = document.createElement('div');
     this.cssLoaded = false; 

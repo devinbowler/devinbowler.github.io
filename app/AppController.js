@@ -6,7 +6,7 @@ import { ProjectPage } from '../components/ProjectPage/ProjectPage.js';
 import { BlogPage } from '../components/BlogPage/BlogPage.js';
 
 
-export class AppController() {
+export class AppController {
   #container = null;
   #currentView = null;
   #view = {};
