@@ -1,12 +1,12 @@
-import { BaseComponent } from "./app/BaseComponent.js";
-import { AppController } from "./app/AppController.js";
+import { BaseComponent } from "../../app/BaseComponent.js";
+import { AppController } from "../../app/AppController.js";
 
 export class AboutPage extends BaseComponent {
   #container = null;
 
   constructor(){
     super();
-    loadCSS('AboutPage');
+    this.loadCSS('AboutPage');
   }
 
   render() {
@@ -19,11 +19,11 @@ export class AboutPage extends BaseComponent {
     this.#setupContainerContent();
 
     return this.#container;
-}
+  }
 
-#setupContainerContent {
-  this.#container.innerHTML = `
-     <div class="test">Devin Bowler</div>
-  `;
+  #setupContainerContent() {
+    this.#container.innerHTML = `
+      <div class="test">Devin Bowler</div>
+    `;
+  }
 }
-

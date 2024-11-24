@@ -1,9 +1,9 @@
 // App Controller to render the app and views.
 import { StaticInfo } from '../components/StaticInfo/StaticInfo.js';
 import { AboutPage } from '../components/AboutPage/AboutPage.js';
-import { ExperiencePage } from '../components/ExperiencePage/ExperiencePage.js';
-import { ProjectPage } from '../components/ProjectPage/ProjectPage.js';
-import { BlogPage } from '../components/BlogPage/BlogPage.js';
+// import { ExperiencePage } from '../components/ExperiencePage/ExperiencePage.js';
+// import { ProjectPage } from '../components/ProjectPage/ProjectPage.js';
+// import { BlogPage } from '../components/BlogPage/BlogPage.js';
 
 
 export class AppController {
@@ -24,16 +24,24 @@ export class AppController {
 }
 
 
-render() {
-  if(!this.#container){
-    this.#container = document.createElement('div');
-    this.#container.classList.add('app-controller');
+  render() {
+    if(!this.#container){
+      this.#container = document.createElement('div');
+      this.#container.classList.add('app-controller');
+    }
+
+    this.#container.innerHTML = '';
+    this.#container.appendChild(this.#currentView.render());
+
+    this.#container.appendChild(this.#views.staticInfo.render());
+
+    return this.#container;
   }
 
-  this.#container.innerHTML = '';
-  this.#container.appendChild(this.#currentView.render());
-
-  this.#container.appendChild(this.#staticInfo.render());
-
-  return this.#container;
+   static getInstance() {
+      if (!AppController.instance) {
+         AppController.instance = new AppController;
+      }
+      return AppController.instance;
+   }
 }

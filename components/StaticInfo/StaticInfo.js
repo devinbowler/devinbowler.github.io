@@ -1,12 +1,12 @@
-import { BaseComponent } from "./app/BaseComponent.js";
-import { AppController } from "./app/AppController.js";
+import { BaseComponent } from "../../app/BaseComponent.js";
+import { AppController } from "../../app/AppController.js";
 
 export class StaticInfo extends BaseComponent {
   #container = null;
 
   constructor(){
     super();
-    loadCSS('StaticInfo');
+    this.loadCSS('StaticInfo');
   }
 
   render() {
@@ -19,11 +19,11 @@ export class StaticInfo extends BaseComponent {
     this.#setupContainerContent();
 
     return this.#container;
-}
+  }
 
-#setupContainerContent {
-  this.#container.innerHTML = `
-     <div class="testP">Profile</div>
-  `;
+  #setupContainerContent() {
+    this.#container.innerHTML = `
+      <div class="testP">Profile</div>
+    `;
+  }
 }
-
