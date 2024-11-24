@@ -2,6 +2,6 @@ import { AppController } from './app/AppController.js';
 
 const AppContainer = document.getElementById("app");
 
-const AppController = AppController.getInstance();
+const appController = AppController.getInstance();
 
-AppContainer.appendChild(AppController.render());
+AppContainer.appendChild(appController.render());
