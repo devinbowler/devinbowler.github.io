@@ -9,7 +9,7 @@ import { BlogPage } from '../components/BlogPage/BlogPage.js';
 export class AppController {
   #container = null;
   #currentView = null;
-  #view = {};
+  #views = {};
 
   constructor(){
     this.#views = {
