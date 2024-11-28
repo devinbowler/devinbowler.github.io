@@ -28,10 +28,10 @@ export class Blog1 extends BaseComponent {
     this.#container.innerHTML = `
       <button class="back-button">← Back</button>
       <div class="blog-content">
-        <h1>Blog Post #1</h1>
-        <p>Published: November 27, 2024</p>
+        <h1>Finding Meaning</h1>
+        <p>Published: November 28, 2024</p>
         <p>
-          This is the full content of Blog Post #1. It explores interesting ideas, provides insights, and offers a detailed discussion of the topics mentioned.
+          The content of this post will appear here when finished.
         </p>
       </div>
     `;

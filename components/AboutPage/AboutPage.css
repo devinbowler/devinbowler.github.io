@@ -1,10 +1,10 @@
 /* Main Content */
 .about-container {
-  margin-left: 270px; /* Align content next to the sidebar (250px + 20px padding) */
+  margin-left: 25%; /* Align content next to the sidebar (250px + 20px padding) */
   padding: 40px; /* Add padding for readability */
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  max-width: 900px; /* Limit the width for better readability */
+  max-width: 1000px; /* Limit the width for better readability */
 }
 
 .about-header h1 {
@@ -17,4 +17,11 @@
   margin-bottom: 15px;
   line-height: 1.6;
   color: #bababa;
+}
+
+/* Responsive Design */
+@media (max-width: 870px) {
+  .about-container {
+    margin-left: 5%;
+  }
 }

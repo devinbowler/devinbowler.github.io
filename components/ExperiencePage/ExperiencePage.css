@@ -1,7 +1,8 @@
 .experience {
-    margin-left: 270px; /* Adjust as needed */
+    margin-left: 25%; /* Adjust as needed */
     padding: 45px; /* Adjust as needed */
     padding-bottom: 0px;
+    max-width: 1000px;
 }
 
 .experience h2 {
@@ -73,3 +74,9 @@
     background-color: rgba(255, 152, 0, 0.2); /* Orange with 50% opacity */
 }
 
+/* Responsive Design */
+@media (max-width: 870px) {
+  .experience {
+    margin-left: 5%;
+  }
+}

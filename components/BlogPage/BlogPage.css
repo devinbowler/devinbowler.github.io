@@ -1,5 +1,6 @@
 .blog-container {
-  margin-left: 270px;
+  margin-left: 25%;
+  max-width: 1000px;
   padding: 45px;
 }
 
@@ -58,4 +59,11 @@
 
 .back-button:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 870px) {
+  .blog-container {
+    margin-left: 5%;
+  }
 }

@@ -1,5 +1,6 @@
 .project-container {
-  margin-left: 270px;
+  margin-left: 25%;
+  max-width: 1000px;
   padding: 45px;
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +50,7 @@
   background-color: #e0e0e0; /* Tag background color */
   border-radius: 4px; /* Rounded corners for tags */
   padding: 5px 10px; /* Padding for tags */
+  font-size: 14px;
 }
 
 .button.github-button {
@@ -68,4 +70,11 @@
 /* Button Hover Effects */
 .button:hover {
   background: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
+}
+
+/* Responsive Design */
+@media (max-width: 870px) {
+  .project-container {
+    margin-left: 5%;
+  }
 }
