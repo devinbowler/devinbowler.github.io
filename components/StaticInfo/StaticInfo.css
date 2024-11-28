@@ -43,6 +43,7 @@
   text-decoration: none; /* No underline */
   font-size: 19px;
   color: white;
+  cursor: pointer;
 }
 
 .sidebar a:hover {
