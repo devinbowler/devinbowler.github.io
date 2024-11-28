@@ -1,0 +1,61 @@
+.blog-container {
+  margin-left: 270px;
+  padding: 45px;
+}
+
+.blog-post {
+  padding: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Hover effect */
+  margin-bottom: 25px;
+}
+
+.blog-post:hover {
+  background-color: #1f1f1f; /* Slight background highlight on hover */
+}
+
+.blog-post h2 {
+  background-color: transparent;
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.blog-post .date {
+  background-color: transparent;
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #a0a0a0; /* Lighter color for the date */
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #444; /* Darker separator line */
+  width: 50px; /* Restrict the width to 50px */
+  margin: 25px 0; /* Add 35px padding above and below */
+  padding: 0;
+}
+
+.blog-post .summary {
+  background-color: transparent;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d0d0d0; /* Light gray text for summary */
+}
+
+/* Back Button */
+.back-button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px; /* Space below the button */
+  margin-top: 25px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}

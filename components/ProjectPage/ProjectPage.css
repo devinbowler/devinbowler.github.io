@@ -1,0 +1,71 @@
+.project-container {
+  margin-left: 270px;
+  padding: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap between cards */
+}
+
+.project {
+  background-color: #1f1f1f; /* Slightly lighter than #1a1a1a */
+  border-radius: 8px; /* Slightly rounded corners */
+  overflow: hidden; /* Ensures image doesn't overflow */
+  width: calc(50% - 10px); /* Two cards per line with gap */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  min-height: 400px;
+}
+
+.project img {
+  width: 100%; /* Image takes full width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.project h2 {
+  background-color: #1f1f1f; 
+  padding: 0 15px; /* Add side padding */
+  margin: 10px 0; /* Spacing for title */
+}
+
+.project p {
+  background-color: #1f1f1f;
+  min-height: 130px;
+  padding: 0 15px; /* Add side padding */
+  margin: 10px 0; /* Spacing for description */
+  color: #ddd;
+}
+
+.tags {
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center; /* Align tags and button vertically */
+  justify-content: flex-start; /* Ensure tags stay grouped on the left */
+  gap: 10px; /* Small space between tags */
+  padding: 0 15px; /* Add side padding for the container */
+  margin-bottom: 15px; /* Add space at the bottom of the card */
+  position: relative; /* Allow absolute positioning for the button */
+}
+
+.tag {
+  background-color: #e0e0e0; /* Tag background color */
+  border-radius: 4px; /* Rounded corners for tags */
+  padding: 5px 10px; /* Padding for tags */
+}
+
+.button.github-button {
+  position: absolute; /* Position the button far right */
+  right: 15px; /* Align with the container's padding */
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: grey solid 1px;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+
+
+/* Button Hover Effects */
+.button:hover {
+  background: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
+}

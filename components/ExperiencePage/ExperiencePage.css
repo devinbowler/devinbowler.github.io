@@ -1,0 +1,75 @@
+.experience {
+    margin-left: 270px; /* Adjust as needed */
+    padding: 45px; /* Adjust as needed */
+    padding-bottom: 0px;
+}
+
+.experience h2 {
+    font-size: 1.5em; /* Make the title larger */
+  margin-bottom: 9px; /* Reduce space between title and company/date */
+}
+
+.experience h3 {
+    font-size: 1em; /* Make the company name a bit bigger */
+    color: #ddd; /* Lighter color for company name */
+    margin-bottom: 2px; /* Reduce space between company name and date */
+}
+
+.experience p {
+    font-size: 0.9em; /* Make the date smaller */
+    color: #777; /* Optional: change color for distinction */
+}
+
+.experience ul {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 20px; /* Space for bullets */
+
+}
+
+.company-date {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    font-size: 1em; /* Ensure consistent font size */
+    color: #ddd; /* Use the same color for the company name */
+    margin: 0; /* Reset margin for the container */
+}
+
+
+.company-date h3 {
+    margin: 0 15px 0 0; /* No left margin, equal right margin */
+}
+
+.company-date p {
+    margin: 0 15px; /* Equal margin on both sides */
+}
+
+.experience ul li {
+    color: #aaa; /* Lighter color for bullet points */
+    margin-bottom: 15px; /* Increase space between bullet points */
+}
+
+.experience .tags {
+    background-color: transparent;
+    margin-top: 20px; /* Space above tags */
+}
+
+.experience .tag {
+    display: inline-block; /* Make tags inline */
+    padding: 8px 10px; /* Padding for tags */
+    margin-right: 5px; /* Space between tags */
+    border-radius: 15px; /* Rounded corners for bubbles */
+    color: white; /* Text color */
+}
+
+.tag:nth-child(1) {
+    background-color: rgba(76, 175, 80, 0.2); /* Green with 50% opacity */
+}
+
+.tag:nth-child(2) {
+    background-color: rgba(33, 150, 243, 0.2); /* Blue with 50% opacity */
+}
+
+.tag:nth-child(3) {
+    background-color: rgba(255, 152, 0, 0.2); /* Orange with 50% opacity */
+}
+

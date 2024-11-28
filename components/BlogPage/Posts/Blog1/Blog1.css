@@ -1,0 +1,38 @@
+.blog-post-container {
+  margin-left: 270px; /* Leaves space for the sidebar */
+  padding: 40px; /* Adds padding around the content */
+}
+
+.blog-content {
+  color: white; /* Ensure the text is visible on dark backgrounds */
+  line-height: 1.6; /* Improves readability with consistent line spacing */
+  font-size: 16px; /* Standard font size for body text */
+}
+
+.blog-content h1 {
+  font-size: 28px; /* Larger font size for the title */
+  margin-bottom: 20px; /* Adds space below the title */
+  color: #fff; /* Ensures the title stands out */
+}
+
+.blog-content p {
+  margin-bottom: 20px; /* Adds spacing between paragraphs */
+  color: #d0d0d0; /* Slightly lighter text color for readability */
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 30px; /* Space below the button */
+  font-size: 16px;
+  background-color: transparent; /* Transparent background for minimal styling */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+

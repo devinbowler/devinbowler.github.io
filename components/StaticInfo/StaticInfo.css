@@ -1,4 +1,50 @@
-.testP {
-  color: black;
-  font-size: 15px;
+/* Static Info Sidebar */
+.static-container {
+  position: fixed; /* Fix sidebar on the left */
+  top: 0;
+  left: 0;
+  width: 250px; /* Sidebar width */
+  height: 100vh; /* Full height */
+  background-color: #1a1a1a; /* Background color */
+  color: white; /* Text color */
+  padding-left: 25px; /* Inner spacing */
+  padding-top: 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile-info {
+  margin-bottom: 20px;
+}
+
+.profile-info .name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profile-info .title {
+  font-size: 17px;
+  color: gray;
+}
+
+.sidebar ul {
+  list-style: none; /* No bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 15px 0; /* Spacing between links */
+}
+
+.sidebar a {
+  text-decoration: none; /* No underline */
+  font-size: 19px;
+  color: white;
+}
+
+.sidebar a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
