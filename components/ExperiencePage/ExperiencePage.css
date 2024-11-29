@@ -77,6 +77,14 @@
 /* Responsive Design */
 @media (max-width: 870px) {
   .experience {
-    margin-left: 5%;
+    margin-left: 0%;
+    text-align: center;
   }
+  .company-date {
+    justify-content: center;
+  }
+  .experience .tags {
+    justify-content: center;
+  }
+
 }

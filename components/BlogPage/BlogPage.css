@@ -64,6 +64,6 @@
 /* Responsive Design */
 @media (max-width: 870px) {
   .blog-container {
-    margin-left: 5%;
+    margin-left: 0%;
   }
 }

@@ -39,6 +39,6 @@
 /* Responsive Design */
 @media (max-width: 870px) {
   .blog-post-container {
-    margin-left: 5%;
+    margin-left: 0%;
   }
 }

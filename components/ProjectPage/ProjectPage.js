@@ -27,9 +27,13 @@ export class ProjectPage extends BaseComponent {
         <h2>Vulnerability Detection</h2>
         <p>This application was a result of my research work at the University of Houston, where I explored how large language models can be used for detecting vulnerabilities in source code. This project taught me how to conduct research systematically, implement security protocols, and analyze outputs for actionable insights.</p>
         <div class="tags">
+        <div>
           <span class="tag">Research</span>
           <span class="tag">Security</span>
-          <button class="button github-button">GitHub</button>
+        </div>
+          <a href="https://github.com/devinbowler/VulnerabilityDetection" target="_blank">
+            <button class="button github-button">GitHub</button>
+          </a>
         </div>
       </div>
       <div class="project">
@@ -37,9 +41,13 @@ export class ProjectPage extends BaseComponent {
         <h2>Quibly</h2>
         <p>Quibly is a full-stack task management app built with the MERN stack. This project provided deep experience in responsive front-end design, seamless API integration, and deploying scalable web applications. It also introduced me to the nuances of hosting and managing live services.</p>
         <div class="tags">
-          <span class="tag">MERN</span>
-          <span class="tag">Responsive Design</span>
-          <button class="button github-button">GitHub</button>
+          <div>
+            <span class="tag">MERN</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+          <a href="https://github.com/devinbowler/Quibly" target="_blank">
+        <button class="button github-button">GitHub</button>
+          </a>
         </div>
       </div>
       <div class="project">
@@ -47,9 +55,13 @@ export class ProjectPage extends BaseComponent {
         <h2>SFTP Server</h2>
         <p>This is a networking and security-focused project leveraging Scapy, OpenSSH, SQL, and tcpdump to build an efficient and secure SFTP server. It taught me how to handle low-level network protocols, debug server-side configurations, and analyze packet data for performance tuning.</p>
         <div class="tags">
-          <span class="tag">Networking</span>
-          <span class="tag">Security</span>
-          <button href="" target="_blank" class="button github-button">GitHub</button>
+          <div>
+            <span class="tag">Networking</span>
+            <span class="tag">Security</span>
+          </div>
+          <a href="https://github.com/devinbowler/SFTPServer" target="_blank">
+            <button class="button github-button">GitHub</button>
+          </a>
         </div>
       </div>
       <div class="project">
@@ -57,9 +69,13 @@ export class ProjectPage extends BaseComponent {
         <h2>Aquatica</h2>
         <p>Aquatica is an e-commerce web application that I developed during my Web Programming class. This project focused on modular front-end design principles using modern frameworks and a robust SQLite backend. It taught me how to architect scalable applications and efficiently manage data storage.</p>
         <div class="tags">
-          <span class="tag">Modular Design</span>
-          <span class="tag">SQLite</span>
-          <button class="button github-button">GitHub</button>
+          <div>
+            <span class="tag">Modular Design</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <a href="https://github.com/batterydied/Aquatica" target="_blank">
+            <button class="button github-button">GitHub</button>
+          </a>
         </div>
       </div>
 
