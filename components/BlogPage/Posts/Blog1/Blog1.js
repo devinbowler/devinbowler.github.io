@@ -28,7 +28,7 @@ export class Blog1 extends BaseComponent {
     this.#container.innerHTML = `
       <button class="back-button">← Back</button>
       <div class="blog-content">
-        <h1>Finding Meaning</h1>
+        <h1>First Writing Coming Soon</h1>
         <p>Published: November 28, 2024</p>
         <p>
           The content of this post will appear here when finished.
