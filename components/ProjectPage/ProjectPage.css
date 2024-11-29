@@ -35,7 +35,7 @@
   color: #ddd;
 }
 
-.tags {
+.project .tags {
   background-color: #1f1f1f;
   display: flex;
   align-items: center; /* Align tags and button vertically */
