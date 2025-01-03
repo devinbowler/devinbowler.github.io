@@ -24,7 +24,7 @@ export class ProjectPage extends BaseComponent {
     this.#container.innerHTML = `
       <div class="project">
         <img src="../../assets/codevisual.webp" alt="CodeVisualizer" />
-        <h2>Visualization</h2>
+        <h2>CodeVisualizer</h2>
         <p>This application was built because I wanted a way to visualize hard coding/math concepts easily. This project taught me how to use LLMs better, and also helped with my understanding of serverless architecture.</p>
         <div class="tags">
         <div>
