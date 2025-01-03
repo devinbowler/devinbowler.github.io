@@ -14,11 +14,10 @@
 }
 
 .profile-info {
-  margin-bottom: 20px;
   border: 1px solid #454444;
   padding: 15px;
   max-width: 170px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .profile-info .pfp {
@@ -43,11 +42,14 @@
   height: 100vh;
 }
 
+.sidebar ul {
+  margin-top: 50px;
+}
+
 .sidebar ul,
 .dropdown-content ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .sidebar li,
@@ -70,7 +72,7 @@
 }
 
 .social-media {
-  margin-top: 300px;
+  margin-top: 5px;
   text-align: center;
 }
 

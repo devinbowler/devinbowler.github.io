@@ -29,18 +29,12 @@ export class StaticInfo extends BaseComponent {
     }
 
     this.#container.innerHTML = `
-      <div class="profile-info">
-        <image class="pfp" src="assets/pfp1.jpg">
-        <div class="name">Devin Bowler</div>
-        <div class="title">Software Developer</div>
-      </div>
       <div class="sidebar">
-        <ul>
-          <li><a data-target="aboutPage" class="tab">About</a></li>
-          <li><a data-target="experiencePage" class="tab">Experience</a></li>
-          <li><a data-target="projectPage" class="tab">Projects</a></li>
-          <li><a data-target="blogPage" class="tab">Blog</a></li>
-        </ul>
+        <div class="profile-info">
+          <image class="pfp" src="assets/pfp1.jpg">
+          <div class="name">Devin Bowler</div>
+          <div class="title">Software Developer</div>
+        </div>
 
         <div class="social-media">
             <a href="https://www.youtube.com/@DevinTheDeveloperYT/videos" target="_blank">
@@ -59,6 +53,14 @@ export class StaticInfo extends BaseComponent {
                 <a href="assets/Resume (ML_DS).pdf" class="resume-link" target="_blank">Resume</a>
             </div>
         </div>
+        <ul>
+          <li><a data-target="aboutPage" class="tab">About</a></li>
+          <li><a data-target="experiencePage" class="tab">Experience</a></li>
+          <li><a data-target="projectPage" class="tab">Projects</a></li>
+          <li><a data-target="blogPage" class="tab">Blog</a></li>
+        </ul>
+
+
       </div>
     `;
 
