@@ -23,34 +23,6 @@ export class ProjectPage extends BaseComponent {
 #setupContainerContent() {
     this.#container.innerHTML = `
       <div class="project">
-        <img src="../../assets/codevisual.webp" alt="CodeVisualizer" />
-        <h2>CodeVisualizer</h2>
-        <p>This application was built because I wanted a way to visualize hard coding/math concepts easily. This project taught me how to use LLMs better, and also helped with my understanding of serverless architecture.</p>
-        <div class="tags">
-        <div>
-          <span class="tag">Srverless</span>
-          <span class="tag">Manim</span>
-        </div>
-          <a href="https://github.com/devinbowler/CodeVisualizer" target="_blank">
-            <button class="button github-button">GitHub</button>
-          </a>
-        </div>
-      </div>
-      <div class="project">
-        <img src="../../assets/vuldet.webp" alt="Vulnerability Detection Application" />
-        <h2>Vulnerability Detection</h2>
-        <p>This application was a result of my research work at the University of Houston, where I explored how large language models can be used for detecting vulnerabilities in source code. This project taught me how to conduct research systematically, implement security protocols, and analyze outputs for actionable insights.</p>
-        <div class="tags">
-        <div>
-          <span class="tag">Research</span>
-          <span class="tag">Security</span>
-        </div>
-          <a href="https://github.com/devinbowler/VulnerabilityDetection" target="_blank">
-            <button class="button github-button">GitHub</button>
-          </a>
-        </div>
-      </div>
-      <div class="project">
         <img src="../../assets/quiblyapp.webp" alt="Quibly Project" />
         <h2>Quibly</h2>
         <p>Quibly is a full-stack task management app built with the MERN stack. This project provided deep experience in responsive front-end design, seamless API integration, and deploying scalable web applications. It also introduced me to the nuances of hosting and managing live services.</p>
@@ -74,6 +46,35 @@ export class ProjectPage extends BaseComponent {
             <span class="tag">CLI</span>
           </div>
           <a href="https://github.com/devinbowler/AutoDocker" target="_blank">
+            <button class="button github-button">GitHub</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="../../assets/codevisual.webp" alt="CodeVisualizer" />
+        <h2>CodeVisualizer</h2>
+        <p>This application was built because I wanted a way to visualize hard coding/math concepts easily. This project taught me how to use LLMs better, and also helped with my understanding of serverless architecture.</p>
+        <div class="tags">
+        <div>
+          <span class="tag">Srverless</span>
+          <span class="tag">Manim</span>
+        </div>
+          <a href="https://github.com/devinbowler/CodeVisualizer" target="_blank">
+            <button class="button github-button">GitHub</button>
+          </a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="../../assets/vuldet.webp" alt="Vulnerability Detection Application" />
+        <h2>Vulnerability Detection</h2>
+        <p>This application was a result of my research work at the University of Houston, where I explored how large language models can be used for detecting vulnerabilities in source code. This project taught me how to conduct research systematically, implement security protocols, and analyze outputs for actionable insights.</p>
+        <div class="tags">
+        <div>
+          <span class="tag">Research</span>
+          <span class="tag">Security</span>
+        </div>
+          <a href="https://github.com/devinbowler/VulnerabilityDetection" target="_blank">
             <button class="button github-button">GitHub</button>
           </a>
         </div>
