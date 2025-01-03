@@ -85,6 +85,24 @@ export class StaticInfo extends BaseComponent {
           <li><a data-target="projectPage" class="tab">Projects</a></li>
           <li><a data-target="blogPage" class="tab">Blog</a></li>
         </ul>
+
+        <div class="social-media">
+            <a href="https://www.youtube.com/@DevinTheDeveloperYT/videos" target="_blank">
+                <img src="assets/reshot-icon-youtube-JH9UE452SM.svg" alt="YouTube">
+            </a>
+            <a href="https://github.com/devinbowler" target="_blank">
+                <img src="assets/github-icon.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/devin-bowler-369616219/" target="_blank">
+                <img src="assets/reshot-icon-linkedin-G7YJ8FXBKT.svg" alt="LinkedIn">
+            </a>
+        </div>
+
+        <div class="button-container">
+            <div class="resume">
+                <a href="assets/Resume (ML_DS).pdf" class="resume-link" target="_blank">Resume</a>
+            </div>
+        </div>
       </div>
     `;
 
