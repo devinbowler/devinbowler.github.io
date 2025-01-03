@@ -15,16 +15,32 @@
 
 .profile-info {
   margin-bottom: 20px;
+  border: 1px solid #454444;
+  padding: 15px;
+  max-width: 170px;
+  margin-bottom: 50px;
+}
+
+.profile-info .pfp {
+  width: 170px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .profile-info .name {
   font-size: 28px;
   font-weight: bold;
+  text-align: center;
 }
 
 .profile-info .title {
   font-size: 17px;
   color: gray;
+  text-align: center;
+}
+
+.sidebar {
+  height: 100vh;
 }
 
 .sidebar ul,
@@ -51,6 +67,30 @@
 .sidebar a:hover,
 .dropdown-content a:hover {
   text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.social-media img {
+    height: 30px;
+    width: 30px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    transition: all .8s;
+}
+
+.resume {
+  text-align: center;
+  border: 1px solid #454444;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 10px;
 }
 
 /* Mobile Dropdown */

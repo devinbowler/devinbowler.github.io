@@ -11,6 +11,8 @@
   font-size: 32px;
   margin-bottom: 20px;
   color: #dedede;
+  font-family: monospace; /* Ensures uniform character width */
+  white-space: pre; /* Preserves whitespace and line breaks */
 }
 
 .about-content p {

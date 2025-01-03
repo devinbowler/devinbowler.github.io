@@ -1,3 +1,7 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
 .experience {
     margin-left: 25%; /* Adjust as needed */
     padding: 45px; /* Adjust as needed */
@@ -12,7 +16,7 @@
 
 .experience h3 {
     font-size: 1em; /* Make the company name a bit bigger */
-    color: #ddd; /* Lighter color for company name */
+    color: #a3a2a2; /* Lighter color for company name */
     margin-bottom: 2px; /* Reduce space between company name and date */
 }
 
@@ -24,7 +28,6 @@
 .experience ul {
     list-style-type: disc; /* Use bullet points */
     padding-left: 20px; /* Space for bullets */
-
 }
 
 .company-date {
@@ -40,12 +43,25 @@
     margin: 0 15px 0 0; /* No left margin, equal right margin */
 }
 
+.experience hr {
+  margin-bottom: 10px;
+  color: grey;
+  border-color: grey;
+  float: left;
+  width: 10%;
+}
+
 .company-date p {
     margin: 0 15px; /* Equal margin on both sides */
 }
 
+.experience ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .experience ul li {
-    color: #aaa; /* Lighter color for bullet points */
+    color: #d6d6d6; /* Lighter color for bullet points */
     margin-bottom: 15px; /* Increase space between bullet points */
 }
 
