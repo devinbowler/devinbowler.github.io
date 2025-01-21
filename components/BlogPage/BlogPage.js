@@ -25,11 +25,11 @@ export class BlogPage extends BaseComponent {
   #setupContainerContent() {
     this.#container.innerHTML = `
       <div class="blog-post" data-post="blog1">
-        <h2>Blog Post Coming Soon</h2>
-        <p class="date">Published: November 28, 2024</p>
+        <h2>About My Posts</h2>
+        <p class="date">Published: January 20, 2025</p>
         <hr class="separator" />
         <p class="summary">
-           A summary of the blog will be posted here.
+           My thoughts on why I am making blog posts, and a disclaimer about them.
         </p>
       </div>
     `;

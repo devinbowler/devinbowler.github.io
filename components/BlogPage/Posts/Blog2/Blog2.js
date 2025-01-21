@@ -28,14 +28,10 @@ export class Blog1 extends BaseComponent {
     this.#container.innerHTML = `
       <button class="back-button">← Back</button>
       <div class="blog-content">
-        <h1>About My Posts</h1>
-        <p class="date">Published: January 20, 2025</p>
-        <p class="summary">
-I wanted to make a first blog post, about my blog posts. I wanted to put this into my portfolio for a way of having record of my thoughts on certain topics, and show my curiosity and teachings to those who come here to get a better idea of who I am. I think the best way to show this is to read my thoughts exactly on certain topics.
-
-I want to make posts about everything from takes on tech topics, abstract thinking, tech I have learned, and just general thoughts relating to my career, the tech I use, and the lessons I learn. 
-
-This is not a very long post, but I just wanted to make a note about how I want to approach my posts, and a disclaimer of I am by no means a writer, and these posts will most likely not be formatted very well, and my point may not come across as well as I would hope, but I hope whoever may read these posts can take anyway a new perspective on the topics I cover, and maybe learn something about me or what I am talking about.
+        <h1>The Struggle of Beginning</h1>
+        <p>Published: January 21st, 2025</p>
+        <p>
+          The struggle of beginning especially in coding, is somthing that can be enjoyable, but in my experience, can end curiosity.
         </p>
       </div>
     `;
