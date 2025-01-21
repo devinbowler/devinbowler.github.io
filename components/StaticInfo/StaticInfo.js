@@ -36,7 +36,14 @@ export class StaticInfo extends BaseComponent {
           <div class="title">Software Developer</div>
         </div>
 
-        <div class="social-media">
+        <ul>
+          <li><a data-target="aboutPage" class="tab">About</a></li>
+          <li><a data-target="experiencePage" class="tab">Experience</a></li>
+          <li><a data-target="projectPage" class="tab">Projects</a></li>
+          <li><a data-target="blogPage" class="tab">Blog</a></li>
+        </ul>
+
+       <div class="social-media">
             <a href="https://www.youtube.com/@DevinTheDeveloperYT/videos" target="_blank">
                 <img src="assets/reshot-icon-youtube-JH9UE452SM.svg" alt="YouTube">
             </a>
@@ -53,14 +60,6 @@ export class StaticInfo extends BaseComponent {
                 <a href="assets/Resume(ML_DS).pdf" class="resume-link" target="_blank">Resume</a>
             </div>
         </div>
-        <ul>
-          <li><a data-target="aboutPage" class="tab">About</a></li>
-          <li><a data-target="experiencePage" class="tab">Experience</a></li>
-          <li><a data-target="projectPage" class="tab">Projects</a></li>
-          <li><a data-target="blogPage" class="tab">Blog</a></li>
-        </ul>
-
-
       </div>
     `;
 

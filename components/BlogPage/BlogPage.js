@@ -24,21 +24,21 @@ export class BlogPage extends BaseComponent {
 
   #setupContainerContent() {
     this.#container.innerHTML = `
+      <div class="blog-post" data-post="blog2">
+        <h2>The Struggle of Beginning</h2>
+        <p class="date">Published: January 21, 2025</p>
+        <hr class="separator" />
+        <p class="summary">
+           The struggle of beginning especially in coding, is somthing that can be enjoyable, but in my experience, can end curiosity.
+        </p>
+      </div>
+      
       <div class="blog-post" data-post="blog1">
         <h2>About My Posts</h2>
         <p class="date">Published: January 20, 2025</p>
         <hr class="separator" />
         <p class="summary">
            My thoughts on why I am making blog posts, and a disclaimer about them.
-        </p>
-      </div>
-
-      <div class="blog-post" data-post="blog2">
-        <h2>The Struggle of Beginning</h2>
-        <p class="date">Published: January 20, 2025</p>
-        <hr class="separator" />
-        <p class="summary">
-           The struggle of beginning especially in coding, is somthing that can be enjoyable, but in my experience, can end curiosity.
         </p>
       </div>
     `;

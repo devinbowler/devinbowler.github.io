@@ -16,7 +16,12 @@
   color: #fff; /* Ensures the title stands out */
 }
 
-.blog-content p {
+.blog-content .date {
+  margin-bottom: 20px; /* Adds spacing between paragraphs */
+  color: #aaaaaa; /* Slightly lighter text color for readability */
+}
+
+.blog-content .summary {
   margin-bottom: 20px; /* Adds spacing between paragraphs */
   color: #d0d0d0; /* Slightly lighter text color for readability */
 }

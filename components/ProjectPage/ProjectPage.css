@@ -8,11 +8,10 @@
 }
 
 .project {
-  background-color: #1f1f1f; /* Slightly lighter than #1a1a1a */
+  background-color: #1f1f1f !important; /* Slightly lighter than #1a1a1a */
   border-radius: 8px; /* Slightly rounded corners */
   overflow: hidden; /* Ensures image doesn't overflow */
   width: calc(50% - 10px); /* Two cards per line with gap */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   min-height: 400px;
 }
 
@@ -47,13 +46,25 @@
 }
 
 .tag {
-  background-color: #e0e0e0; /* Tag background color */
   border-radius: 4px; /* Rounded corners for tags */
   padding: 5px 10px; /* Padding for tags */
   font-size: 14px;
 }
 
+.project .tag:nth-child(1) {
+  background-color: rgba(76, 175, 79, 0.1); /* Green with 50% opacity */
+}
+
+.project .tag:nth-child(2) {
+  background-color: rgba(33, 150, 243, 0.1); /* Blue with 50% opacity */
+}
+
+.tags div, a {
+  background-color: #1f1f1f !important;
+}
+
 .button.github-button {
+  background-color: #1f1f1f !important;
   right: 15px; /* Align with the container's padding */
   color: white;
   cursor: pointer;

@@ -25,7 +25,7 @@ export class ExperiencePage extends BaseComponent {
     this.#container.innerHTML = `
       <div class="experience">
 
-        <h2>Undergraduate Machine Learning Researcher</h2>
+        <h2>Applied Research Engineer</h2>
         <div class="company-date">
             <h3>University of Houston</h3> | <p>May 2024 - August 2024</p>
         </div>

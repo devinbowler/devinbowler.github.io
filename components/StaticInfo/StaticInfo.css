@@ -5,7 +5,6 @@
   left: 0;
   width: 250px;
   height: 100vh;
-  background-color: #1a1a1a;
   color: white;
   padding-left: 45px;
   padding-top: 70px;
@@ -14,7 +13,6 @@
 }
 
 .profile-info {
-  border: 1px solid #454444;
   padding: 15px;
   max-width: 170px;
   margin-bottom: 25px;
@@ -50,6 +48,7 @@
 .dropdown-content ul {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 
 .sidebar li,
@@ -72,7 +71,7 @@
 }
 
 .social-media {
-  margin-top: 5px;
+  margin-top: 250px;
   text-align: center;
 }
 
