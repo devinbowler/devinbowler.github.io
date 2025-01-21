@@ -1,12 +1,12 @@
 import { BaseComponent } from "../../../../app/BaseComponent.js";
 import { AppController } from "../../../../app/AppController.js";
 
-export class Blog1 extends BaseComponent {
+export class Blog2 extends BaseComponent {
   #container = null;
 
   constructor() {
     super();
-    this.loadCSS("BlogPost1", "components/BlogPage/Posts/Blog1/Blog1.css");
+    this.loadCSS("BlogPost2", "components/BlogPage/Posts/Blog2/Blog2.css");
   }
 
   render() {
