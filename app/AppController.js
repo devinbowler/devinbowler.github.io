@@ -21,7 +21,7 @@ export class AppController {
 	    projectPage: new ProjectPage(),
 	    blogPage: new BlogPage(),
       blog1: new Blog1(),
-      blog2: newBlog2()
+      blog2: new Blog2()
     }
 
     this.#currentView = this.#views.aboutPage;
