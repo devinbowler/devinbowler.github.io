@@ -5,7 +5,7 @@ import { ExperiencePage } from '../components/ExperiencePage/ExperiencePage.js';
 import { ProjectPage } from '../components/ProjectPage/ProjectPage.js';
 import { BlogPage } from '../components/BlogPage/BlogPage.js';
 import { Blog1 } from '../components/BlogPage/Posts/Blog1/Blog1.js';
-import { Blog1 } from '../components/BlogPage/Posts/Blog2/Blog2.js';
+import { Blog2 } from '../components/BlogPage/Posts/Blog2/Blog2.js';
 
 
 export class AppController {
