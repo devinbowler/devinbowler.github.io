@@ -45,7 +45,7 @@
   position: relative; /* Allow absolute positioning for the button */
 }
 
-.tag {
+.project .tag {
   border-radius: 4px; /* Rounded corners for tags */
   padding: 5px 10px; /* Padding for tags */
   font-size: 14px;
@@ -59,7 +59,7 @@
   background-color: rgba(33, 150, 243, 0.1); /* Blue with 50% opacity */
 }
 
-.tags div, a {
+.project .tags div, .project .tags a {
   background-color: #1f1f1f !important;
 }
 
