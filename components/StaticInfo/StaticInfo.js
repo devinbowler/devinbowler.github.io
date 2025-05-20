@@ -57,7 +57,7 @@ export class StaticInfo extends BaseComponent {
 
         <div class="button-container">
             <div class="resume">
-                <a href="assets/Y2m8F1[1zXxQ$(Bbf£IJ%.pdf" class="resume-link" target="_blank">Resume</a>
+                <a href="assets/DevinBowlerResume.pdf" class="resume-link" target="_blank">Resume</a>
             </div>
         </div>
       </div>
@@ -101,7 +101,7 @@ export class StaticInfo extends BaseComponent {
 
         <div class="button-container">
             <div class="resume">
-                <a href="assets/Y2m8F1[1zXxQ$(Bbf£IJ%.pdf" class="resume-link" target="_blank">Resume</a>
+                <a href="assets/DevinBowlerResume.pdf" class="resume-link" target="_blank">Resume</a>
             </div>
         </div>
       </div>
