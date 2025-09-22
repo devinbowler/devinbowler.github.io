@@ -102,11 +102,6 @@
     font-size: 1.2em;
 }
 
-.experience-container .achievements li:hover {
-    color: #e5e7eb;
-    padding-left: 32px;
-}
-
 /* Tags */
 .experience-container .tags {
     display: flex;
