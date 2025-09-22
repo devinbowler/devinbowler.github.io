@@ -1,92 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
-    min-height: 100vh;
-    color: #e8e8e8;
-    line-height: 1.6;
-}
-
+/* All styles scoped to experience-container to avoid affecting other pages */
 .experience-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 60px 20px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #e8e8e8;
+    line-height: 1.6;
 }
 
-/* Page Header */
-.page-header {
-    margin-bottom: 60px;
-    text-align: center;
+/* Experience Sections - No borders or backgrounds */
+.experience-container .experience {
+    padding: 32px 0;
+    margin-bottom: 48px;
     position: relative;
-}
-
-.page-header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 10px;
-    animation: fadeInDown 0.8s ease-out;
-    letter-spacing: -0.02em;
-}
-
-.page-header p {
-    color: #9ca3af;
-    font-size: 1.1em;
-    animation: fadeInUp 0.8s ease-out;
-}
-
-/* Experience Cards */
-.experience {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 32px;
-    margin-bottom: 32px;
-    position: relative;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     animation: fadeInUp 0.6s ease-out;
     opacity: 0;
     animation-fill-mode: forwards;
 }
 
-.experience::before {
+/* Left accent line on hover */
+.experience-container .experience::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 4px;
+    left: -20px;
+    width: 3px;
     height: 100%;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.experience:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-.experience:hover::before {
+.experience-container .experience:hover::before {
     opacity: 1;
 }
 
 /* Role and Company Information */
-.role-title {
+.experience-container .role-title {
     font-size: 1.8em;
     font-weight: 600;
     color: #ffffff;
@@ -94,7 +47,7 @@ body {
     letter-spacing: -0.02em;
 }
 
-.company-info {
+.experience-container .company-info {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -102,13 +55,13 @@ body {
     flex-wrap: wrap;
 }
 
-.company-name {
+.experience-container .company-name {
     font-size: 1.1em;
     font-weight: 500;
     color: #a78bfa;
 }
 
-.date-range {
+.experience-container .date-range {
     font-size: 0.9em;
     color: #6b7280;
     padding: 4px 12px;
@@ -117,19 +70,20 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.divider {
+.experience-container .divider {
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
     margin: 24px 0;
 }
 
 /* Achievements List */
-.achievements {
+.experience-container .achievements {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.achievements li {
+.experience-container .achievements li {
     position: relative;
     padding-left: 28px;
     margin-bottom: 20px;
@@ -139,28 +93,29 @@ body {
     transition: all 0.3s ease;
 }
 
-.achievements li::before {
+.experience-container .achievements li::before {
     content: '▸';
     position: absolute;
     left: 0;
-    color: #a78bfa;
+    color: #ffffff;
     font-weight: 600;
     font-size: 1.2em;
 }
 
-.achievements li:hover {
+.experience-container .achievements li:hover {
     color: #e5e7eb;
+    padding-left: 32px;
 }
 
 /* Tags */
-.tags {
+.experience-container .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 24px;
 }
 
-.tag {
+.experience-container .tag {
     padding: 6px 14px;
     border-radius: 8px;
     font-size: 0.85em;
@@ -171,90 +126,79 @@ body {
 }
 
 /* Tag color variants */
-.tag-research {
+.experience-container .tag-research {
     background: rgba(129, 140, 248, 0.15);
     color: #818cf8;
     border: 1px solid rgba(129, 140, 248, 0.3);
 }
 
-.tag-research:hover {
+.experience-container .tag-research:hover {
     background: rgba(129, 140, 248, 0.25);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(129, 140, 248, 0.2);
 }
 
-.tag-unity {
+.experience-container .tag-unity {
     background: rgba(251, 146, 60, 0.15);
     color: #fb923c;
     border: 1px solid rgba(251, 146, 60, 0.3);
 }
 
-.tag-unity:hover {
+.experience-container .tag-unity:hover {
     background: rgba(251, 146, 60, 0.25);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(251, 146, 60, 0.2);
 }
 
-.tag-fastapi {
+.experience-container .tag-fastapi {
     background: rgba(34, 197, 94, 0.15);
     color: #22c55e;
     border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
-.tag-fastapi:hover {
+.experience-container .tag-fastapi:hover {
     background: rgba(34, 197, 94, 0.25);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
 }
 
-.tag-ml {
+.experience-container .tag-ml {
     background: rgba(236, 72, 153, 0.15);
     color: #ec4899;
     border: 1px solid rgba(236, 72, 153, 0.3);
 }
 
-.tag-ml:hover {
+.experience-container .tag-ml:hover {
     background: rgba(236, 72, 153, 0.25);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
 }
 
-.tag-python {
+.experience-container .tag-python {
     background: rgba(59, 130, 246, 0.15);
     color: #3b82f6;
     border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
-.tag-python:hover {
+.experience-container .tag-python:hover {
     background: rgba(59, 130, 246, 0.25);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
-.tag-security {
+.experience-container .tag-security {
     background: rgba(239, 68, 68, 0.15);
     color: #ef4444;
     border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
-.tag-security:hover {
+.experience-container .tag-security:hover {
     background: rgba(239, 68, 68, 0.25);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
 }
 
 /* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -267,31 +211,31 @@ body {
 }
 
 /* Scroll animation class */
-.experience.visible {
+.experience-container .experience.visible {
     opacity: 1;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .page-header h1 {
-        font-size: 2.2em;
+    .experience-container {
+        padding: 40px 20px;
     }
     
-    .experience {
-        padding: 24px;
+    .experience-container .experience {
+        padding: 24px 0;
     }
     
-    .role-title {
+    .experience-container .role-title {
         font-size: 1.5em;
     }
     
-    .company-info {
+    .experience-container .company-info {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
     }
     
-    .achievements li {
+    .experience-container .achievements li {
         font-size: 0.9em;
         padding-left: 24px;
     }
@@ -299,45 +243,37 @@ body {
 
 @media (max-width: 480px) {
     .experience-container {
-        padding: 40px 10px;
+        padding: 30px 15px;
     }
     
-    .experience {
-        padding: 20px;
-        border-radius: 12px;
+    .experience-container .experience {
+        padding: 20px 0;
+        margin-bottom: 32px;
     }
     
-    .page-header h1 {
-        font-size: 1.8em;
-    }
-    
-    .page-header p {
-        font-size: 0.95em;
-    }
-    
-    .role-title {
+    .experience-container .role-title {
         font-size: 1.3em;
     }
     
-    .company-name {
+    .experience-container .company-name {
         font-size: 1em;
     }
     
-    .date-range {
+    .experience-container .date-range {
         font-size: 0.85em;
     }
     
-    .achievements li {
+    .experience-container .achievements li {
         font-size: 0.85em;
         line-height: 1.6;
         margin-bottom: 16px;
     }
     
-    .tags {
+    .experience-container .tags {
         gap: 6px;
     }
     
-    .tag {
+    .experience-container .tag {
         font-size: 0.8em;
         padding: 5px 10px;
     }
