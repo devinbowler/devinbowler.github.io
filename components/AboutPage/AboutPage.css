@@ -4,7 +4,8 @@
   padding: 40px; /* Add padding for readability */
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  max-width: 1000px; /* Limit the width for better readability */
+  max-width: 1300px; /* Limit the width for better readability */
+  font-size: 21px;
 }
 
 .about-header h1 {
