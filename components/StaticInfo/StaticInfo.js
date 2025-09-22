@@ -57,7 +57,7 @@ export class StaticInfo extends BaseComponent {
 
         <div class="button-container">
             <div class="resume">
-                <a href="assets/DevinBowlerResume.pdf" class="resume-link" target="_blank">Resume</a>
+                <a href="assets/Devin_Bowler_Resume_2025.pdf" class="resume-link" target="_blank">Resume</a>
             </div>
         </div>
       </div>
