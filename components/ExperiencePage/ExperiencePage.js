@@ -24,11 +24,6 @@ export class ExperiencePage extends BaseComponent {
   
   #setupContainerContent() {
     this.#container.innerHTML = `
-      <div class="page-header">
-        <h1>Experience</h1>
-        <p>Building innovative solutions through research and development</p>
-      </div>
-      
       <div class="experience" data-aos="fade-up">
         <h2 class="role-title">Applied Research Engineer</h2>
         <div class="company-info">
