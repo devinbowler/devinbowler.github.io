@@ -24,6 +24,15 @@ export class BlogPage extends BaseComponent {
 
   #setupContainerContent() {
     this.#container.innerHTML = `
+      <div class="blog-post" data-post="blog3">
+        <h2>The Struggle of Beginning</h2>
+        <p class="date">Published: December 21, 2025</p>
+        <hr class="separator" />
+        <p class="summary">
+           How Did a Single Paper Influence the Entire U.S Market? (A technical paper translation I wrote in my Social Issues in Computing Class).
+        </p>
+      </div>
+      
       <div class="blog-post" data-post="blog2">
         <h2>The Struggle of Beginning</h2>
         <p class="date">Published: January 21, 2025</p>
