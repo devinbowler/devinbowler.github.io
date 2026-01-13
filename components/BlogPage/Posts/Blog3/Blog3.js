@@ -1,7 +1,7 @@
 import { BaseComponent } from "../../../../app/BaseComponent.js";
 import { AppController } from "../../../../app/AppController.js";
 
-export class Blog2 extends BaseComponent {
+export class Blog3 extends BaseComponent {
   #container = null;
 
   constructor() {
