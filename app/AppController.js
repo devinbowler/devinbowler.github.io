@@ -6,6 +6,7 @@ import { ProjectPage } from '../components/ProjectPage/ProjectPage.js';
 import { BlogPage } from '../components/BlogPage/BlogPage.js';
 import { Blog1 } from '../components/BlogPage/Posts/Blog1/Blog1.js';
 import { Blog2 } from '../components/BlogPage/Posts/Blog2/Blog2.js';
+import { Blog2 } from '../components/BlogPage/Posts/Blog3/Blog3.js';
 
 
 export class AppController {
@@ -20,8 +21,9 @@ export class AppController {
 	    experiencePage: new ExperiencePage(),
 	    projectPage: new ProjectPage(),
 	    blogPage: new BlogPage(),
-      blog1: new Blog1(),
-      blog2: new Blog2()
+       blog1: new Blog1(),
+       blog2: new Blog2(),
+	   blog2: new Blog3()
     }
 
     this.#currentView = this.#views.aboutPage;
