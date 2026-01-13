@@ -6,7 +6,7 @@ export class Blog3 extends BaseComponent {
 
   constructor() {
     super();
-    this.loadCSS("BlogPost3", "components/BlogPage/Posts/Blog2/Blog3.css");
+    this.loadCSS("BlogPost3", "components/BlogPage/Posts/Blog3/Blog3.css");
   }
 
   render() {
