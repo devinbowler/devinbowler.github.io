@@ -2,6 +2,7 @@
 * {
     background-color:#131313;
     font-family: 'Times New Roman', Times,  !important;
+	font-size: 14px;
 }
   body {
 	overflow-x: hidden;
@@ -11,4 +12,5 @@
 a {
 	text-decoration: none;
 }
+
  
