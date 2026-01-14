@@ -44,7 +44,7 @@ But why is this? How could one paper have made such an impact, especially with t
 
 
 
-
+<br><br>
 
 
 The Problem: Sequential Processing
@@ -54,7 +54,6 @@ Before present day LLMs that sit behind names like ChatGPT, Gemini or Claude, we
 All of these models handled text one word at a time, updating themselves as it moved through an input sequence. They powered early chatbots, machine translation systems, and speech generation tools. But this design created two problems. First, it made training these models very slow. Second, the “memory” these models had of past words faded fast, making it nearly impossible to maintain coherence over long prompts. As a result, these models would often repeat themselves, forgetting earlier context, and struggled to produce any meaningful long-form text.
 
 
-The figure depicts how the hidden state updates with each word.
 
 More thoroughly defined, Recurrent Neural Networks read in one word at a time, as we said, and tried to keep track of what they were seeing in a single instance, in the form of a “memory” representation. During training, the model learned patterns about what tends to come next. At inference time, it uses only the current memory representation to guess the next word. So it is sort of like scribing a conversation on a sticky note, where you write each word in the center and keep overwriting the last. Soon enough, you cannot tell what was said earlier or even recently, and you lose meaning quickly.
 
@@ -63,7 +62,7 @@ In training, Recurrent Neural Networks would see millions of examples of convers
 To try to improve these problems, Long Short-Term Memory networks were introduced. These models would use a sort of logic gate; for every new word, it would process and determine if it would change the “memory” or not, based on its importance to the current conversation. It would also look back on what was recently said and determine whether to forget it. To go back to the sticky note, if we only wrote down the important stuff, and erased what was said earlier that is no longer contributing to the current discussion, we can see more context further back than before, but eventually you run into the same problem of a confused “memory”.
 
 
-The figure breaks down different aspects of the  Long Short-Term Memory network.
+<br><br>
 
 
 
@@ -81,6 +80,7 @@ Continuing with our sticky note analogy, a Recurrent Neural Network would keep w
 
 This also removes the bottleneck of sequential processing and replaces it with a system where relationships between words are computed in parallel. The model doesn't try to cram the entire sentence into a single memory representation anymore; it simply refers back to the exact words it needs. This makes it far easier to maintain context across long writings and captures patterns that older models repeatedly lost. Because everything can be processed simultaneously, training becomes much faster and more efficient than with any previous architectures.
 
+<br><br>
 
 
 Inside the Transformer Architecture
@@ -92,6 +92,7 @@ After we calculate word attention, the model passes these refined versions of ea
 A core part of the Transformer that the paper spends significant time describing is its overall encoder-decoder structure, which organizes how the model reads an input and then generates an output. This architecture was common in earlier translation models, but the Transformer was the first to implement it entirely with attention mechanisms instead of recurrent networks. While we won’t cover this here, this article does a great job outlining each and every part of the entire proposed Transformer architecture and providing visuals for it.
 
 
+<br><br>
 
 
 Why It Trained So Much Faster
@@ -102,6 +103,7 @@ The Transformer breaks this limitation entirely. Because it looks at all words i
 
 Parallelization also meant researchers could explore larger model sizes with more layers, more attention heads, and bigger internal dimensions without waiting unreasonable amounts of time. The paper’s section on model variations demonstrated that increasing model size generally improved performance, another early indication of the scaling capabilities that would define modern LLMs. The Transformer wasn’t just a new model; it was a model that finally benefited from being scaled, something older architectures struggled with.
 
+<br><br>
 
 The Results
 
