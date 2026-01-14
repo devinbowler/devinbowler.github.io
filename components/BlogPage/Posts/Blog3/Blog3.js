@@ -34,9 +34,8 @@ export class Blog3 extends BaseComponent {
 The paper titled “Attention is All You Need” published in 2017 made way for the new wave of text generation models. It was the breakthrough needed to give us the popular tools today like ChatGPT, Gemini, and Claude. But just how did a single paper allow for such seemingly exponential improvement?
 
 
+<br><br><br><br>
 
-
-Image of the Transformer architecture.
 
 This paper from 2017 “Attention is All You Need” has ignited a technological shift so large that the companies building off of its ideas now make up nearly HALF of the S&P 500’s market capitalization. 
 
@@ -44,10 +43,10 @@ But why is this? How could one paper have made such an impact, especially with t
 
 
 
-<br><br>
+<br><br><br><br>
 
 
-The Problem: Sequential Processing
+The Problem: Sequential Processing<br><br>
 
 Before present day LLMs that sit behind names like ChatGPT, Gemini or Claude, we had text generation models built from technology called Recurrent Neural Networks (RNNs), Long Short-Term Memory networks (LSTMs) and Gated Recurrent Units (GRUs), we will cover these here in a moment, but all of these shared a key feature, or now defined as a restriction—sequential processing.
 
@@ -62,11 +61,11 @@ In training, Recurrent Neural Networks would see millions of examples of convers
 To try to improve these problems, Long Short-Term Memory networks were introduced. These models would use a sort of logic gate; for every new word, it would process and determine if it would change the “memory” or not, based on its importance to the current conversation. It would also look back on what was recently said and determine whether to forget it. To go back to the sticky note, if we only wrote down the important stuff, and erased what was said earlier that is no longer contributing to the current discussion, we can see more context further back than before, but eventually you run into the same problem of a confused “memory”.
 
 
-<br><br>
+<br><br><br><br>
 
 
 
-The Breakthrough: Attention
+The Breakthrough: Attention<br><br>
 
 Now that we understand where earlier models struggled, we can introduce the breakthrough that changed everything: attention. Although attention was not a new concept, it had been introduced first in 2014. It was used alongside a Recurrent Neural Network, which still limited its abilities. But this paper showed that you don’t need the Recurrent Neural Network anymore, just attention; hence the paper's name. At a high level, attention is quite simple to understand, yet it completely changed how generative models work.
 
@@ -80,10 +79,10 @@ Continuing with our sticky note analogy, a Recurrent Neural Network would keep w
 
 This also removes the bottleneck of sequential processing and replaces it with a system where relationships between words are computed in parallel. The model doesn't try to cram the entire sentence into a single memory representation anymore; it simply refers back to the exact words it needs. This makes it far easier to maintain context across long writings and captures patterns that older models repeatedly lost. Because everything can be processed simultaneously, training becomes much faster and more efficient than with any previous architectures.
 
-<br><br>
+<br><br><br><br>
 
 
-Inside the Transformer Architecture
+Inside the Transformer Architecture<br><br>
 
 However, even though attention was the main aspect of change here, the paper covers much more in its Transformer architecture. First attention is used again, but in something called multi-head attention. This simply means that the model looks at not only one aspect of its importance in a sentence, but several ways. For example, one ‘head’ may focus on grammatical meaning, another on long-distance connections, and another on small patterns like style. By adding these perspectives, the model builds a richer understanding than a single view could. Transformers also add something called positional encoding, which simply tells the model the order of words in a sentence. Beforehand, this didn’t matter as we were going sequentially, but now with parallel processing of words, we still need to know where words fell in place, because that has high importance.
 
@@ -92,10 +91,10 @@ After we calculate word attention, the model passes these refined versions of ea
 A core part of the Transformer that the paper spends significant time describing is its overall encoder-decoder structure, which organizes how the model reads an input and then generates an output. This architecture was common in earlier translation models, but the Transformer was the first to implement it entirely with attention mechanisms instead of recurrent networks. While we won’t cover this here, this article does a great job outlining each and every part of the entire proposed Transformer architecture and providing visuals for it.
 
 
-<br><br>
+<br><br><br><br>
 
 
-Why It Trained So Much Faster
+Why It Trained So Much Faster<br><br>
 
 Another important contribution of the Transformer, emphasized throughout the paper, is how efficiently it can be trained. In other model architectures like Recurrent Neural Networks, they had to process every word step-by-step, which meant training required long, slow passes over huge datasets. 
 
@@ -103,9 +102,9 @@ The Transformer breaks this limitation entirely. Because it looks at all words i
 
 Parallelization also meant researchers could explore larger model sizes with more layers, more attention heads, and bigger internal dimensions without waiting unreasonable amounts of time. The paper’s section on model variations demonstrated that increasing model size generally improved performance, another early indication of the scaling capabilities that would define modern LLMs. The Transformer wasn’t just a new model; it was a model that finally benefited from being scaled, something older architectures struggled with.
 
-<br><br>
+<br><br><br><br>
 
-The Results
+The Results<br><br>
 
 The results in the paper showed how powerful this design was. On major translation benchmarks, the Transformer achieved state-of-the-art performance while training far faster and more efficiently than previous models. Even the base model outperformed complex, expensive Recurrent Neural Network systems. The architecture also generalized beyond translation; it performed strongly on grammar parsing tasks, even with minimal task-specific fine-tuning.
 
