@@ -1,70 +1,38 @@
 .blog-container {
-  margin-left: 25%;
-  max-width: 1000px;
-  padding: 45px;
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .blog-post {
-  padding: 20px;
-  background-color: transparent;
+  padding: 24px 20px;
+  background: transparent;
+  border-radius: var(--radius-lg);
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Hover effect */
-  margin-bottom: 25px;
-  border-radius: 7px;
+  transition: background-color 0.2s ease;
+  margin-bottom: 4px;
 }
 
 .blog-post:hover {
-  background-color: #1f1f1f; /* Slight background highlight on hover */
+  background-color: #f7f7f7;
 }
 
 .blog-post h2 {
-  background-color: transparent;
-  margin: 0 0 10px;
-  font-size: 24px;
-  color: white;
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .blog-post .date {
-  background-color: transparent;
-  margin: 0 0 15px;
-  font-size: 14px;
-  color: #a0a0a0; /* Lighter color for the date */
-}
-
-.separator {
-  border: none;
-  border-top: 1px solid #444; /* Darker separator line */
-  width: 50px; /* Restrict the width to 50px */
-  margin: 25px 0; /* Add 35px padding above and below */
-  padding: 0;
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--text-muted);
 }
 
 .blog-post .summary {
-  background-color: transparent;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #d0d0d0; /* Light gray text for summary */
-}
-
-/* Back Button */
-.back-button {
-  background: transparent;
-  color: white;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  margin-bottom: 15px; /* Space below the button */
-  margin-top: 25px;
-}
-
-.back-button:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 870px) {
-  .blog-container {
-    margin-left: 0%;
-  }
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
 }

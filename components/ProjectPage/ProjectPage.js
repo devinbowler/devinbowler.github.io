@@ -1,5 +1,4 @@
 import { BaseComponent } from "../../app/BaseComponent.js";
-import { AppController } from "../../app/AppController.js";
 
 export class ProjectPage extends BaseComponent {
   #container = null;
@@ -20,82 +19,84 @@ export class ProjectPage extends BaseComponent {
 
     return this.#container;
   }
-#setupContainerContent() {
+
+  #setupContainerContent() {
     this.#container.innerHTML = `
-      <div class="project">
-        <img src="../../assets/quiblyimg.png" alt="Quibly Project" />
-        <h2>Quibly</h2>
-        <p>Quibly is a full-stack task management app built with the MERN stack. This project provided deep experience in responsive front-end design, seamless API integration, and deploying scalable web applications. It also introduced me to the nuances of hosting and managing live services.</p>
-        <div class="tags">
-          <div>
-            <span class="tag">MERN</span>
-            <span class="tag">Responsive Design</span>
-          </div>
-          <a href="https://github.com/devinbowler/Quibly" target="_blank">
-        <button class="button github-button">GitHub</button>
-          </a>
-        </div>
-      </div>
-      <div class="project">
-        <img src="../../assets/autodockerimg.png" alt="Dokcer CLI Image" />
-        <h2>AutoDocker</h2>
-        <p>This is a CLI tool made to automatically build out Docker containers and images, for a selected project. It is built using python and it taught me how to interact with a command line, and how to use docker more efficiently.</p>
-        <div class="tags">
-          <div>
-            <span class="tag">Docker</span>
-            <span class="tag">CLI</span>
-          </div>
-          <a href="https://github.com/devinbowler/AutoDocker" target="_blank">
-            <button class="button github-button">GitHub</button>
-          </a>
-        </div>
+      <div class="page-header">
+        <h1>Selected projects spanning full-stack, research, and developer tooling.</h1>
       </div>
 
-      <div class="project">
-        <img src="../../assets/conceptriximg.png" alt="Conceptrix" />
-        <h2>Conceptrix</h2>
-        <p>This application was built because I wanted a way to visualize hard coding/math concepts easily. This project taught me how to use LLMs better, and also helped with my understanding of micro service architecture.</p>
-        <div class="tags">
-        <div>
-          <span class="tag">MicroService</span>
-          <span class="tag">Manim</span>
-        </div>
-          <a href="https://github.com/devinbowler/CodeVisualizer" target="_blank">
-            <button class="button github-button">GitHub</button>
-          </a>
-        </div>
-      </div>
-      <div class="project">
-        <img src="../../assets/vuldetimg.png" alt="Vulnerability Detection Application" />
-        <h2>Vulnerability Detection</h2>
-        <p>This application was a result of my research work at the University of Houston, where I explored how large language models can be used for detecting vulnerabilities in source code. This project taught me how to conduct research systematically, implement security protocols, and analyze outputs for actionable insights.</p>
-        <div class="tags">
-        <div>
-          <span class="tag">Research</span>
-          <span class="tag">Security</span>
-        </div>
-          <a href="https://github.com/devinbowler/VulnerabilityDetection" target="_blank">
-            <button class="button github-button">GitHub</button>
-          </a>
-        </div>
-      </div>
-      <div class="project">
-        <img src="../../assets/aquaticaimg.png" alt="Aquatica Project" />
-        <h2>Aquatica</h2>
-        <p>Aquatica is an e-commerce web application that I developed during my Web Programming class. This project focused on modular front-end design principles using modern frameworks and a robust SQLite backend. It taught me how to architect scalable applications and efficiently manage data storage.</p>
-        <div class="tags">
-          <div>
-            <span class="tag">Modular Design</span>
-            <span class="tag">SQLite</span>
-          </div>
-          <a href="https://github.com/batterydied/Aquatica" target="_blank">
-            <button class="button github-button">GitHub</button>
-          </a>
-        </div>
-      </div>
+      <div class="section-divider"><span>Projects</span></div>
 
+      <div class="project-grid">
+        <div class="project">
+          <div class="project-image">
+            <div class="project-image-screen">
+              <img src="assets/quiblyimg.png" alt="Quibly Project" />
+            </div>
+          </div>
+          <div class="project-body">
+            <h2>Quibly</h2>
+            <p>Quibly is a resume tailoring platform where you upload your profile, paste a job link, and get a tailored resume generated for that role. After generation, a built-in LaTeX editor lets you refine the output before export. Rebuilt on the same MERN stack as its earlier task-management version, with a focus on responsive design, API integration, and deploying scalable web applications.</p>
+            <div class="tags">
+              <span class="tag">MERN</span>
+              <span class="tag">LaTeX</span>
+              <a href="https://quibly.net" target="_blank" class="btn btn-sm btn-outline project-link">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-image">
+            <div class="project-image-screen">
+              <img src="assets/autodockerimg.png" alt="Docker CLI Image" />
+            </div>
+          </div>
+          <div class="project-body">
+            <h2>AutoDocker</h2>
+            <p>This is a CLI tool made to automatically build out Docker containers and images, for a selected project. It is built using python and it taught me how to interact with a command line, and how to use docker more efficiently.</p>
+            <div class="tags">
+              <span class="tag">Docker</span>
+              <span class="tag">CLI</span>
+              <a href="https://github.com/devinbowler/AutoDocker" target="_blank" class="btn btn-sm btn-outline project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-image">
+            <div class="project-image-screen">
+              <img src="assets/conceptriximg.png" alt="Conceptrix" />
+            </div>
+          </div>
+          <div class="project-body">
+            <h2>Conceptrix</h2>
+            <p>This application was built because I wanted a way to visualize hard coding/math concepts easily. This project taught me how to use LLMs better, and also helped with my understanding of micro service architecture.</p>
+            <div class="tags">
+              <span class="tag">MicroService</span>
+              <span class="tag">Manim</span>
+              <a href="https://github.com/devinbowler/CodeVisualizer" target="_blank" class="btn btn-sm btn-outline project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-image">
+            <div class="project-image-screen">
+              <img src="assets/vuldetimg.png" alt="Vulnerability Detection Application" />
+            </div>
+          </div>
+          <div class="project-body">
+            <h2>Vulnerability Detection</h2>
+            <p>This application was a result of my research work at the University of Houston, where I explored how large language models can be used for detecting vulnerabilities in source code. This project taught me how to conduct research systematically, implement security protocols, and analyze outputs for actionable insights.</p>
+            <div class="tags">
+              <span class="tag">Research</span>
+              <span class="tag">Security</span>
+              <a href="https://github.com/devinbowler/VulnerabilityDetection" target="_blank" class="btn btn-sm btn-outline project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
     `;
+  }
 }
-  
-}
-

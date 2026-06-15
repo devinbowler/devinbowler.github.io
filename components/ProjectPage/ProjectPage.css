@@ -1,103 +1,92 @@
 .project-container {
-  margin-left: 25%;
-  padding: 45px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Adjust gap between cards */
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 .project {
-  background-color: #1f1f1f !important; /* Slightly lighter than #1a1a1a */
-  border-radius: 8px; /* Slightly rounded corners */
-  overflow: hidden; /* Ensures image doesn't overflow */
-  width: calc(50% - 10px); /* Two cards per line with gap */
-  min-height: 400px;
-}
-
-.project img {
-  width: 100%; /* Image takes full width of the card */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.project h2 {
-  background-color: #1f1f1f; 
-  padding: 0 15px; /* Add side padding */
-  margin: 10px 0; /* Spacing for title */
-}
-
-.project p {
-  background-color: #1f1f1f;
-  min-height: 130px;
-  padding: 0 15px; /* Add side padding */
-  margin: 10px 0; /* Spacing for description */
-  color: #ddd;
-}
-
-.project .tags {
-  background-color: #1f1f1f;
   display: flex;
-  align-items: center; /* Align tags and button vertically */
-  justify-content: space-between; /* Ensure tags stay grouped on the left */
-  gap: 10px; /* Small space between tags */
-  padding: 0 15px; /* Add side padding for the container */
-  margin-bottom: 15px; /* Add space at the bottom of the card */
-  position: relative; /* Allow absolute positioning for the button */
+  flex-direction: column;
+  padding: 24px;
+  background: var(--bg-page);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease;
 }
 
-.project .tag {
-  border-radius: 4px; /* Rounded corners for tags */
-  padding: 5px 10px; /* Padding for tags */
+.project:hover {
+  border-color: #ccc;
+}
+
+/* Browser-style image frame with white chin bar */
+.project-image {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 10px 10px 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.project-image-screen {
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.project-image-screen img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.project-image-chin {
+  height: 32px;
+  background: #ffffff;
+  border-radius: 0 0 8px 8px;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-body h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.project-body p {
   font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  flex: 1;
 }
 
-.project .tag:nth-child(1) {
-  background-color: rgba(76, 175, 79, 0.1); /* Green with 50% opacity */
+.project-body .tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
 }
 
-.project .tag:nth-child(2) {
-  background-color: rgba(33, 150, 243, 0.1); /* Blue with 50% opacity */
-}
-
-.project .tags div, .project .tags a {
-  background-color: #1f1f1f !important;
-}
-
-.button.github-button {
-  background-color: #1f1f1f !important;
-  right: 15px; /* Align with the container's padding */
-  color: white;
-  cursor: pointer;
-  border-radius: 8px;
-  padding: 5px 10px;
-  background-color: transparent;
-  border: grey solid 1px;
+.project-link {
   margin-left: auto;
-  transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
-
-
-/* Button Hover Effects */
-.button:hover {
-  background: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
-}
-
-/* Responsive Design */
-@media (max-width: 870px) {
-  .project-container {
-    margin-left: 0%;
-    flex-direction: column;
-  }
-  .project {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .project-container {
-    flex-direction: column;
-  }
-  .project {
-    width: 100%;
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }

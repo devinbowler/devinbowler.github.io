@@ -1,49 +1,30 @@
 .blog-post-container {
-  margin-left: 25%; /* Leaves space for the sidebar */
-  max-width: 1000px;
-  padding: 40px; /* Adds padding around the content */
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .blog-content {
-  color: white; /* Ensure the text is visible on dark backgrounds */
-  line-height: 1.6; /* Improves readability with consistent line spacing */
-  font-size: 16px; /* Standard font size for body text */
+  color: var(--text-secondary);
+  line-height: 1.75;
+  font-size: 15px;
 }
 
 .blog-content h1 {
-  font-size: 28px; /* Larger font size for the title */
-  margin-bottom: 20px; /* Adds space below the title */
-  color: #fff; /* Ensures the title stands out */
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+  color: var(--text-primary);
 }
 
 .blog-content .date {
-  margin-bottom: 20px; /* Adds spacing between paragraphs */
-  color: #aaaaaa; /* Slightly lighter text color for readability */
+  margin-bottom: 28px;
+  font-size: 13px;
+  color: var(--text-muted);
 }
 
-.blog-content .summary {
-  margin-bottom: 20px; /* Adds spacing between paragraphs */
-  color: #d0d0d0; /* Slightly lighter text color for readability */
-}
-
-.back-button {
-  display: inline-block;
-  margin-bottom: 30px; /* Space below the button */
-  font-size: 16px;
-  background-color: transparent; /* Transparent background for minimal styling */
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-}
-
-.back-button:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 870px) {
-  .blog-post-container {
-    margin-left: 0%;
-  }
+.blog-content .summary,
+.blog-content p {
+  margin-bottom: 20px;
+  color: var(--text-secondary);
 }

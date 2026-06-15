@@ -12,6 +12,7 @@ import { Blog3 } from '../components/BlogPage/Posts/Blog3/Blog3.js';
 export class AppController {
   #container = null;
   #currentView = null;
+  #currentViewName = 'aboutPage';
   #views = {};
 
   constructor(){
@@ -34,11 +35,15 @@ export class AppController {
     if(!this.#container){
       this.#container = document.createElement('div');
       this.#container.classList.add('app-controller');
+      this.#container.appendChild(this.#views.staticInfo.render());
     }
 
-    this.#container.innerHTML = '';
-    this.#container.appendChild(this.#views.staticInfo.render());
-    this.#container.appendChild(this.#currentView.render());
+    const mount = this.#views.staticInfo.getContentMount();
+    mount.innerHTML = '';
+    mount.appendChild(this.#currentView.render());
+
+    this.#views.staticInfo.setActiveTab(this.#currentViewName);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     return this.#container;
   }
@@ -47,7 +52,7 @@ export class AppController {
     if(!this.#views[viewName]){
       throw new Error(`No view exists for "${viewName}".`);
     }
-    console.log(`Navigating to: ${viewName}`); // Debug log
+    this.#currentViewName = viewName;
     this.#currentView = this.#views[viewName];
     this.render();
   }

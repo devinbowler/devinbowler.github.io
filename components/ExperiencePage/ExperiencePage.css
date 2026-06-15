@@ -1,272 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-/* All styles scoped to experience-container to avoid affecting other pages */
 .experience-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color: #e8e8e8;
-    line-height: 1.6;
-    padding-left: 15%;
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
-/* Experience Sections - No borders or backgrounds */
 .experience-container .experience {
-    padding: 32px 0;
-    margin-bottom: 48px;
-    position: relative;
-    transition: all 0.3s ease;
-    animation: fadeInUp 0.6s ease-out;
-    opacity: 0;
-    animation-fill-mode: forwards;
+  padding: 32px 0;
+  margin-bottom: 16px;
 }
 
-/* Left accent line on hover */
-.experience-container .experience::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.experience-container .experience:not(:last-child) {
+  border-bottom: 1px solid var(--border);
 }
 
-/* Role and Company Information */
 .experience-container .role-title {
-    font-size: 1.8em;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 12px;
-    letter-spacing: -0.02em;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
 }
 
 .experience-container .company-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .experience-container .company-name {
-    font-size: 1.1em;
-    font-weight: 500;
-    color: #a78bfa;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
 }
 
 .experience-container .date-range {
-    font-size: 0.9em;
-    color: #6b7280;
-    padding: 4px 12px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--bg-page);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
 }
 
 .experience-container .divider {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    margin: 24px 0;
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
 }
 
-/* Achievements List */
 .experience-container .achievements {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .experience-container .achievements li {
-    position: relative;
-    padding-left: 28px;
-    margin-bottom: 20px;
-    color: #d1d5db;
-    font-size: 0.95em;
-    line-height: 1.7;
-    transition: all 0.3s ease;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 14px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .experience-container .achievements li::before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1.2em;
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
 }
 
-/* Tags */
 .experience-container .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
 }
 
-.experience-container .tag {
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-size: 0.85em;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    transition: all 0.2s ease;
-    cursor: default;
-}
-
-/* Tag color variants */
-.experience-container .tag-research {
-    background: rgba(129, 140, 248, 0.15);
-    color: #818cf8;
-    border: 1px solid rgba(129, 140, 248, 0.3);
-}
-
-.experience-container .tag-research:hover {
-    background: rgba(129, 140, 248, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(129, 140, 248, 0.2);
-}
-
-.experience-container .tag-unity {
-    background: rgba(251, 146, 60, 0.15);
-    color: #fb923c;
-    border: 1px solid rgba(251, 146, 60, 0.3);
-}
-
-.experience-container .tag-unity:hover {
-    background: rgba(251, 146, 60, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(251, 146, 60, 0.2);
-}
-
-.experience-container .tag-fastapi {
-    background: rgba(34, 197, 94, 0.15);
-    color: #22c55e;
-    border: 1px solid rgba(34, 197, 94, 0.3);
-}
-
-.experience-container .tag-fastapi:hover {
-    background: rgba(34, 197, 94, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
-}
-
-.experience-container .tag-ml {
-    background: rgba(236, 72, 153, 0.15);
-    color: #ec4899;
-    border: 1px solid rgba(236, 72, 153, 0.3);
-}
-
-.experience-container .tag-ml:hover {
-    background: rgba(236, 72, 153, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
-}
-
-.experience-container .tag-python {
-    background: rgba(59, 130, 246, 0.15);
-    color: #3b82f6;
-    border: 1px solid rgba(59, 130, 246, 0.3);
-}
-
-.experience-container .tag-python:hover {
-    background: rgba(59, 130, 246, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
-}
-
-.experience-container .tag-security {
-    background: rgba(239, 68, 68, 0.15);
-    color: #ef4444;
-    border: 1px solid rgba(239, 68, 68, 0.3);
-}
-
-.experience-container .tag-security:hover {
-    background: rgba(239, 68, 68, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Scroll animation class */
-.experience-container .experience.visible {
-    opacity: 1;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    .experience-container {
-        padding: 40px 20px;
-    }
-    
-    .experience-container .experience {
-        padding: 24px 0;
-    }
-    
-    .experience-container .role-title {
-        font-size: 1.5em;
-    }
-    
-    .experience-container .company-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-    
-    .experience-container .achievements li {
-        font-size: 0.9em;
-        padding-left: 24px;
-    }
-}
+  .experience-container .role-title {
+    font-size: 1.2rem;
+  }
 
-@media (max-width: 480px) {
-    .experience-container {
-        padding: 30px 15px;
-    }
-    
-    .experience-container .experience {
-        padding: 20px 0;
-        margin-bottom: 32px;
-    }
-    
-    .experience-container .role-title {
-        font-size: 1.3em;
-    }
-    
-    .experience-container .company-name {
-        font-size: 1em;
-    }
-    
-    .experience-container .date-range {
-        font-size: 0.85em;
-    }
-    
-    .experience-container .achievements li {
-        font-size: 0.85em;
-        line-height: 1.6;
-        margin-bottom: 16px;
-    }
-    
-    .experience-container .tags {
-        gap: 6px;
-    }
-    
-    .experience-container .tag {
-        font-size: 0.8em;
-        padding: 5px 10px;
-    }
+  .experience-container .company-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
