@@ -27,7 +27,7 @@ export class AboutPage extends BaseComponent {
         <div class="hero-profile">
           <img class="hero-pfp" src="assets/pfp1.jpg" alt="Devin Bowler">
         </div>
-        <h1 class="hero-headline">Building software, research, and meaningful digital experiences.</h1>
+        <h1 class="hero-headline">Building software, contributing to research, and chasing meaningful experiences.</h1>
         <button class="btn btn-primary hero-cta" data-target="projectPage">
           View Projects
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
